@@ -1,6 +1,6 @@
 # DollarPHP
 A PHP Framework for my cat
-```
+```javascript
 到项目目录下
 php composer.phar install
 
