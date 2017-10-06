@@ -11,6 +11,8 @@
     "symfony/var-dumper":"*",
     "catfan/medoo":"*",
     "twig/twig":"*",
-    "wixel/gump": "^1.5"
+    "wixel/gump": "^1.5",
+    "symfony/http-foundation": "^3.3",
+    "nikic/fast-route": "^1.2"
   }
 }

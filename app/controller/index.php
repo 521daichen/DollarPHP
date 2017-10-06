@@ -9,14 +9,18 @@ namespace app\controller;
 use app\validate\IndexValidate;
 use core\dollar;
 use core\lib\model;
+use Symfony\Component\HttpFoundation\Request;
 
 class index extends dollar {
 
-    public function index()
+    public function index($id)
     {
+        var_export($id);
+        exit();
+
         $data = [
-            'username'=>'asdad',
-            'password'=>''
+            'username'=>'asdadssssssssssssss',
+            'password'=>'sssssssssssssss'
         ];
         IndexValidate::doValidate($data);
 

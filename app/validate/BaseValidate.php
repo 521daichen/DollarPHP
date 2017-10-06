@@ -13,11 +13,11 @@ namespace app\validate;
 */
 class BaseValidate extends \GUMP{
 
-    protected static $validator;
+//    protected static $validator;
 
     function init($lang = 'zh-cn')
     {
-        self::$validator = new parent();
+//        self::$validator = new parent();
         parent::__construct($lang);
     }
 }

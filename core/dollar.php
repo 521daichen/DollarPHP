@@ -24,6 +24,10 @@ class dollar{
     static public function run(){
         \core\lib\log::init();
         \core\lib\log::log('test');
+        $router = new \core\lib\Router();
+        $router->run();
+
+        /*
         $route = new \core\lib\route();
         $controller = $route->controller;
         $action = $route->action;
@@ -31,7 +35,7 @@ class dollar{
         $ctrlClass = '\\'.MODULE.'\controller\\'.$controller;
         $c = new $ctrlClass();
         $c->$action();
-
+*/
 //        if(is_file($ctrlfile)){
 //            include $ctrlfile;
 //            $c = new $ctrlClass();

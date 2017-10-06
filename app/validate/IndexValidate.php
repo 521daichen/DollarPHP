@@ -20,9 +20,9 @@ class IndexValidate extends \GUMP{
         self::$validator->validation_rules(array(
             'username'    => 'required|alpha_numeric|max_len,100|min_len,6',
             'password'    => 'required|max_len,100|min_len,6',
-            'email'       => 'required|valid_email',
-            'gender'      => 'required|exact_len,1|contains,m f',
-            'credit_card' => 'required|valid_cc'
+//            'email'       => 'required|valid_email',
+//            'gender'      => 'required|exact_len,1|contains,m f',
+//            'credit_card' => 'required|valid_cc'
         ));
         self::$validator->filter_rules(array(
             'username' => 'trim|sanitize_string',
@@ -31,9 +31,12 @@ class IndexValidate extends \GUMP{
             'gender'   => 'trim',
             'bio'	   => 'noise_words'
         ));
-        $validated_data = self::$validator->run($_POST);
+
+        $validated_data = self::$validator->run($data);
+
         if($validated_data === false) {
-            echo self::$validator->get_readable_errors(true);
+            throw new \Exception(self::$validator->get_readable_errors(true));
+//            echo self::$validator->get_readable_errors(true);
         } else {
             print_r($validated_data); // validation successful
         }
