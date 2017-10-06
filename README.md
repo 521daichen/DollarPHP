@@ -12,3 +12,5 @@ php composer.phar install
 日志
 插件
 ```
+2017/10/6
+增加路由机制
