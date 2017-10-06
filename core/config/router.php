@@ -16,15 +16,3 @@ $dispatcher = \FastRoute\simpleDispatcher(function(\FastRoute\RouteCollector $r)
 );
 
 return $dispatcher;
-
-
-
-
-
-//$dispatcher = \FastRoute\simpleDispatcher(function(\FastRoute\RouteCollector $r) {
-//    $r->
-//    // {id} must be a number (\d+)
-//    $r->
-//    // The /{title} suffix is optional
-//    $r->
-//});

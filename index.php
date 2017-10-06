@@ -23,8 +23,10 @@ define('CORE',DOLLAR.'/core');
 define('MODULE','app');
 //项目目录
 define('APP',DOLLAR.'/app');
-//插件模式开启
-define('PLIGIN',false);
+//插件模式
+define('PLUGIN',false);
+//配置路由
+define('ROUTE_CONFIG',true);
 
 //调试模式
 define('DEBUG',true);
@@ -50,7 +52,7 @@ include CORE.'/dollar.php';
 spl_autoload_register('\core\dollar::load');
 //spl_autoload_register('\core\dollar::load1');
 //加载扩展
-if(PLIGIN){
+if(PLUGIN){
 \core\dollar::loadExt();
 }
 \core\dollar::run();

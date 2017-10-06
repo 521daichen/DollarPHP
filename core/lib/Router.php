@@ -9,9 +9,33 @@
 namespace core\lib;
 
 class  Router{
+
+    /**
+     * 自动匹配
+     */
+    public function autoMatch(){
+
+        $route = new \core\lib\route();
+        $controller = $route->controller;
+        $action = $route->action;
+//        $ctrlfile = APP.'/controller/'.$controller.'.php';
+        $ctrlClass = '\\'.MODULE.'\controller\\'.$controller;
+        $c = new $ctrlClass();
+        $c->$action();
+
+//        if(is_file($ctrlfile)){
+//            include $ctrlfile;
+//            $c = new $ctrlClass();
+//            $c->$action();
+//        }
+    }
+
+    /**
+     * 配置匹配
+     */
     public function run(){
         $dispatcher = \core\lib\conf::all('router');
-// Fetch method and URI from somewhere
+
         $httpMethod = $_SERVER['REQUEST_METHOD'];
         $uri = $_SERVER['REQUEST_URI'];
 
@@ -29,7 +53,7 @@ class  Router{
                 // ... 405 Method Not Allowed
                 break;
             case \FastRoute\Dispatcher::FOUND:
-//                var_export($routeInfo);
+
                 $handler = $routeInfo[1];
                 $vars = $routeInfo[2];
                 // ... call $handler with $vars
