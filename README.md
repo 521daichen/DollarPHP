@@ -1,12 +1,12 @@
 # DollarPHP
 A PHP Framework for my cat
 
-##使用方法：
+## 使用方法：
 git clone https://github.com/521daichen/DollarPHP
 
 php composer.phar install
 
-##路由配置：
+## 路由配置：
 此项目使用第三方路由组件fastRoute
 文档：
 https://github.com/nikic/FastRoute
@@ -27,7 +27,7 @@ $dispatcher = \FastRoute\simpleDispatcher(function(\FastRoute\RouteCollector $r)
 ```
 
 
-##IOC容器：
+## IOC容器：
 此项目采用了全局ioc容器，将常用的类方法全部塞入$dollarApp全局容器中，使用的时候无需再实例化对象。方便对整个项目中常用类的管理和使用
 IOC配置：
 \core\config\Di.php
