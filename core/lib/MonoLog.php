@@ -46,7 +46,7 @@ class MonoLog {
                 $level = Logger::INFO;
         }
 
-
+        $path = $path.date('YmdH');
         $this->Logger->pushHandler(new StreamHandler($path, $level));
 
     }

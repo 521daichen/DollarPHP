@@ -58,11 +58,11 @@ spl_autoload_register('\core\dollar::load');
 if(PLUGIN){
 \core\dollar::loadExt();
 }
-
 //创建注入容器
 $dollarApp = new DI\Di();
 //初始化注入服务
 \DI\DiService::init($dollarApp);
+
 //启动框架
 $dollarApp->get('dollar')->run();
 

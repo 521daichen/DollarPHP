@@ -8,6 +8,7 @@
 namespace app\controller;
 use app\validate\IndexValidate;
 use core\dollar;
+use core\lib\Log\file;
 use core\lib\model;
 use Symfony\Component\HttpFoundation\Request;
 
@@ -15,7 +16,24 @@ class index extends dollar {
 
     public function index($id)
     {
+        global $dollarApp;
+//        $orm = new \core\lib\Orm();
+        $orm = $dollarApp->get('orm');
+        $log = $dollarApp->get('log');
 
+        $log->info('error','asdadss');
+        $log->error('error','asdadss');
+        $log->debug('error','asdadss');
+
+//        $log = new file();
+
+//        var_export($log->log('error','sdsd'));
+
+        exit();
+        $res = $orm->select("uid","uname","uage")->from('users')->select('upwd');
+        echo $res;
+
+        exit();
         global $dollarApp;
         $logger = $dollarApp->get('logger');
         $logger->createLog('NOTICE');

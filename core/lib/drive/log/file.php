@@ -24,7 +24,7 @@ class file{
          *      存在
          * 2 写入日志
          */
-        date_default_timezone_set('UTC');
+
         if(!is_dir($this->path)){
             mkdir($this->path,0777,true);
         }

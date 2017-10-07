@@ -23,11 +23,10 @@ class dollar{
 
     static public function run(){
 
+//        \core\lib\log::init();
+//        \core\lib\log::log('test');
 
 
-
-        \core\lib\log::init();
-        \core\lib\log::log('test');
         $router = new \core\lib\Router();
         if(ROUTE_CONFIG){
             $router->run();

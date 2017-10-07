@@ -25,8 +25,8 @@ class DiService {
         self::$Di = $DiObj;
         self::$classList = conf::all('di');
         foreach (self::$classList as $classAlias=>$className){
-
-            self::$Di->set($classAlias,$className);
+            //设置共享服务
+            self::$Di->setShared($classAlias,$className,true);
         }
     }
 

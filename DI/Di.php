@@ -16,6 +16,7 @@ class Di implements \ArrayAccess{
         //先从已经实例化的列表中查找
 
         if(isset($this->_instances[$name])){
+
             return $this->_instances[$name];
         }
         //检测有没有注册该服务

@@ -7,9 +7,10 @@
  */
 
 return array(
-
     'router'=>'\core\lib\Router',
     'request'=>'\Symfony\Component\HttpFoundation\Request',
     'dollar'=>'\core\dollar',
-    'logger'=>'\core\lib\MonoLog'
+    'logger'=>'\core\lib\MonoLog',
+    'orm'=>'\core\lib\Orm',
+    'log'=>'\core\lib\Log\file'
 );

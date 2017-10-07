@@ -11,15 +11,31 @@ class log{
      * 1.确定日志存储方式
      * 2.写日志
      */
-    static $class;
-    static public function init(){
+    public $class;
+
+    public function __construct()
+    {
+        global $dollarApp;
+
+
         //确定存储方式
         $drive = conf::get('DRIVE','log');
-        $class = '\\core\lib\drive\log\\'.$drive;
-        self::$class = new $class;
+//        $class = '\\core\lib\drive\log\\'.$drive;
+        $class = '\\core\lib\Log\\'.$drive;
+//        $this->class = new $class;
+
+
+//        return $dollarApp->get('log');
+
     }
-    static public function log($name,$file='log'){
-        self::$class->log($name);
-    }
+
+//    static public function init(){
+//
+//    }
+
+//
+//    static public function log($name,$file='log'){
+//        self::$class->log($name);
+//    }
 
 }
