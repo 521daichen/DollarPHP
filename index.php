@@ -11,6 +11,9 @@
  * 2、加载函数库
  * 3、启动框架
  */
+
+date_default_timezone_set("PRC");
+
 header('Content-type:text/html;charset=utf8');
 //定义当前框架所在的目录
 define('DOLLAR',realpath('./'));
@@ -55,4 +58,12 @@ spl_autoload_register('\core\dollar::load');
 if(PLUGIN){
 \core\dollar::loadExt();
 }
-\core\dollar::run();
+
+//创建注入容器
+$dollarApp = new DI\Di();
+//初始化注入服务
+\DI\DiService::init($dollarApp);
+//启动框架
+$dollarApp->get('dollar')->run();
+
+//\core\dollar::run();

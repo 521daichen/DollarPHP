@@ -15,10 +15,17 @@ class index extends dollar {
 
     public function index($id)
     {
+
+        global $dollarApp;
+        $logger = $dollarApp->get('logger');
+        $logger->createLog('NOTICE');
+var_export($logger->log('info','asdsddsads'));
+echo 1;
+        exit();
         $request = Request::createFromGlobals();
 //        $p = isset($_POST['foo'])?$_POST['foo']:'';
 
-        var_export($request->request->get('foo'));
+//        var_export($request->request->get('foo'));
 //        $data = [
 //            'username'=>'asdadssssssssssssss',
 //            'password'=>'sssssssssssssss'
