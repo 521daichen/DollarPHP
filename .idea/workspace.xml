@@ -2,47 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="11cf395b-e1a0-43df-a224-64a9a91d4864" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/core/lib/Log/file.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/core/lib/Orm.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/core/lib/interfaces/ILog.php" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dollarLog/to/dollar.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/log/2017100411log.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/log/2017100413log.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/log/2017100414log.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/log/2017100415log.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/log/2017100505log.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/log/2017100513log.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/log/2017100514log.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/log/2017100515log.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/log/2017100516log.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/log/2017100600log.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/log/2017100601log.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/log/2017100602log.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/log/2017100603log.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/log/2017100604log.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/log/2017100609log.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/log/2017100610log.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/log/2017100613log.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/log/2017100614log.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/log/2017100703log.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/log/2017100709log.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/log/2017100710log.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/log/2017100711log.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/log/twig/7c/7c3eb8a7dc67b931bf6ad2d9bc3a2eff44f16992bb3115fd1bee3ef3ebed8102.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/log/twig/99/99323e2e6860facf32ea5bafdafc9db2e67c0425faa37362b4ae64c7bca6c207.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/path/to/your.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/path/to/yousr.log" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DI/Di.php" afterPath="$PROJECT_DIR$/DI/Di.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DI/DiService.php" afterPath="$PROJECT_DIR$/DI/DiService.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controller/index.php" afterPath="$PROJECT_DIR$/app/controller/index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/config/Di.php" afterPath="$PROJECT_DIR$/core/config/Di.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/dollar.php" afterPath="$PROJECT_DIR$/core/dollar.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/lib/MonoLog.php" afterPath="$PROJECT_DIR$/core/lib/MonoLog.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/lib/drive/log/file.php" afterPath="$PROJECT_DIR$/core/lib/drive/log/file.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/lib/log.php" afterPath="$PROJECT_DIR$/core/lib/log.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -79,8 +40,8 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="379">
-                <caret line="44" column="0" lean-forward="true" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
+              <first_editor relative-caret-position="414">
+                <caret line="18" column="13" lean-forward="true" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -194,18 +155,7 @@
             <path>
               <item name="DollarPHP" type="b2602c69:ProjectViewProjectNode" />
               <item name="DollarPHP" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="core" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="DollarPHP" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DollarPHP" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="core" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="config" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="DollarPHP" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DollarPHP" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="DI" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="logs" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
           </expand>
           <select />
@@ -246,12 +196,12 @@
       <workItem from="1507257616145" duration="422000" />
       <workItem from="1507261418724" duration="2097000" />
       <workItem from="1507282012257" duration="5787000" />
-      <workItem from="1507347141364" duration="21147000" />
+      <workItem from="1507347141364" duration="21707000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="34337000" />
+    <option name="totallyTimeSpent" value="34897000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -657,30 +607,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/config/Di.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="14" column="31" lean-forward="true" selection-start-line="14" selection-start-column="3" selection-end-line="14" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/config/router.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="69">
-          <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="16" selection-end-column="2" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/config/route.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="259">
@@ -699,11 +625,35 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/core/config/route.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/config/router.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="69">
+          <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="16" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/config/Di.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="14" column="31" lean-forward="true" selection-start-line="14" selection-start-column="3" selection-end-line="14" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="379">
-            <caret line="44" column="0" lean-forward="true" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
+          <first_editor relative-caret-position="414">
+            <caret line="18" column="13" lean-forward="true" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
             <folding />
           </first_editor>
           <second_editor />

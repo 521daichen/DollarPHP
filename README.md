@@ -1,6 +1,11 @@
 # DollarPHP
 A PHP Framework for my cat
 
+## 前言
+此框架为个人项目，为什么要叫DollarPHP呢？因为我的喵叫 $ 。
+写这个框架纯粹是为了学习，有兴趣一起学习或者有任何建议吐槽的可以联系我
+> QQ:543577508 橙橙同学
+
 ## 使用方法：
 git clone https://github.com/521daichen/DollarPHP
 
@@ -41,5 +46,14 @@ global $dollarApp;
 $logger = $dollarApp->get('log');
 $logger->......
 
-
-
+## 日志:
+```
+global $dollarApp;
+$logger = $dollarApp->get('log');
+$logger->log($level,$message);
+$logger->error($message);
+$logger->debug($message);
+$logger->info($message);
+$logger->warning($message);
+框架会自动在根目录下创建logs目录，并根据不同日志级别创建相应分类，自动创建每日目录防止日志过大，单log文件每小时创建一个防止文件过大。
+```
