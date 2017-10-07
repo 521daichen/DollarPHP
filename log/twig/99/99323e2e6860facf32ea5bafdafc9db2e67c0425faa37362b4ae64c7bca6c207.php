@@ -33,6 +33,14 @@ class __TwigTemplate_d854477ccd5c8559a6839e9a2b5e3257948eaa16864ab5fd4fd94e12030
         // line 5
         echo twig_escape_filter($this->env, (isset($context["daichen"]) ? $context["daichen"] : null), "html", null, true);
         echo "
+
+
+<form action=\"/users\" method=\"post\">
+
+    <input type=\"text\" name=\"foo\">
+    <input type=\"submit\">
+
+</form>
 ";
     }
 
@@ -66,6 +74,14 @@ class __TwigTemplate_d854477ccd5c8559a6839e9a2b5e3257948eaa16864ab5fd4fd94e12030
 {% block content%}
 
 {{daichen}}
+
+
+<form action=\"/users\" method=\"post\">
+
+    <input type=\"text\" name=\"foo\">
+    <input type=\"submit\">
+
+</form>
 {% endblock%}
 
 

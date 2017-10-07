@@ -15,14 +15,15 @@ class index extends dollar {
 
     public function index($id)
     {
-        var_export($id);
-        exit();
+        $request = Request::createFromGlobals();
+//        $p = isset($_POST['foo'])?$_POST['foo']:'';
 
-        $data = [
-            'username'=>'asdadssssssssssssss',
-            'password'=>'sssssssssssssss'
-        ];
-        IndexValidate::doValidate($data);
+        var_export($request->request->get('foo'));
+//        $data = [
+//            'username'=>'asdadssssssssssssss',
+//            'password'=>'sssssssssssssss'
+//        ];
+//        IndexValidate::doValidate($data);
 
 
 //        $is_valid = \GUMP::is_valid($data, array(
@@ -37,11 +38,10 @@ class index extends dollar {
 //        }
 
 
-        echo 1;
-        exit();
+
 
         //这里使用单例+工厂模式
-        $model = new \app\model\dollarModel();
+//        $model = new \app\model\dollarModel();
 
 //        dump($model->lists());
 

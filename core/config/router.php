@@ -7,11 +7,12 @@
  */
 
 $dispatcher = \FastRoute\simpleDispatcher(function(\FastRoute\RouteCollector $r) {
-    $r->addRoute('GET', '/users/{id:\d+}', '\app\controller\index@index');
+    $r->addRoute('POST', '/users', '\app\controller\index@index');
     // {id} must be a number (\d+)
     $r->addRoute('GET', '/user/{id:\d+}', '\app\controller\index@getuser');
     // The /{title} suffix is optional
     $r->addRoute('GET', '/articles/{id:\d+}[/{title}]', 'get_article_handler');
+    $r->addRoute('GET', '/', '\app\controller\index@index');
     }
 );
 
