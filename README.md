@@ -9,7 +9,7 @@ A PHP Framework for my cat
 2017/10/8 
 
 增加助手类Config/Log/MarkDown   分离路由配置   更改部分框架目录
-
+调整框架目录，增加public静态资源目录并动态加载
 
 ## 前言
 此框架为个人项目，为什么要叫DollarPHP呢？因为我的喵叫 $ 。

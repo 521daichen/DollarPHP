@@ -2,59 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="11cf395b-e1a0-43df-a224-64a9a91d4864" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dollarphp/DI/config.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dollarphp/init.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/home/css/cover.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/DI/Di.php" afterPath="$PROJECT_DIR$/dollarphp/DI/Di.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/DI/DiService.php" afterPath="$PROJECT_DIR$/dollarphp/DI/DiService.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/config/config.php" afterPath="$PROJECT_DIR$/app/home/config/config.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/config/router.php" afterPath="$PROJECT_DIR$/app/home/config/router.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/controller/index.php" afterPath="$PROJECT_DIR$/app/home/controller/index.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/controller/test.php" afterPath="$PROJECT_DIR$/app/home/controller/test.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/model/dollarModel.php" afterPath="$PROJECT_DIR$/app/home/model/dollarModel.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/plugin/ClickPlugin.php" afterPath="$PROJECT_DIR$/app/home/plugin/ClickPlugin.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/plugin/ZanPlugin.php" afterPath="$PROJECT_DIR$/app/home/plugin/ZanPlugin.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/validate/BaseValidate.php" afterPath="$PROJECT_DIR$/app/home/validate/BaseValidate.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/validate/IndexValidate.php" afterPath="$PROJECT_DIR$/app/home/validate/IndexValidate.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/views/forms.html" afterPath="$PROJECT_DIR$/app/home/views/forms.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/views/index.html" afterPath="$PROJECT_DIR$/app/home/views/index.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/views/layout.html" afterPath="$PROJECT_DIR$/app/home/views/layout.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/views/test/index.html" afterPath="$PROJECT_DIR$/app/home/views/test/index.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/core/common/function.php" afterPath="$PROJECT_DIR$/dollarphp/common/function.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/core/config/Di.php" afterPath="$PROJECT_DIR$/dollarphp/config/Di.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/core/config/db.php" afterPath="$PROJECT_DIR$/dollarphp/config/db.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/core/config/log.php" afterPath="$PROJECT_DIR$/dollarphp/config/log.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/core/config/route.php" afterPath="$PROJECT_DIR$/dollarphp/config/route.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/core/config/router.php" afterPath="$PROJECT_DIR$/dollarphp/config/router.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/core/dollar.php" afterPath="$PROJECT_DIR$/dollarphp/dollar.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/core/lib/Config.php" afterPath="$PROJECT_DIR$/dollarphp/lib/Config.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/core/lib/Controller.php" afterPath="$PROJECT_DIR$/dollarphp/lib/Controller.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/core/lib/Database.php" afterPath="$PROJECT_DIR$/dollarphp/lib/Database.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/core/lib/Databases/MySQL.php" afterPath="$PROJECT_DIR$/dollarphp/lib/Databases/MySQL.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/core/lib/Databases/MySQLi.php" afterPath="$PROJECT_DIR$/dollarphp/lib/Databases/MySQLi.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/core/lib/Databases/PDO.php" afterPath="$PROJECT_DIR$/dollarphp/lib/Databases/PDO.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/core/lib/Factory.php" afterPath="$PROJECT_DIR$/dollarphp/lib/Factory.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/core/lib/LoadPlugin.php" afterPath="$PROJECT_DIR$/dollarphp/lib/LoadPlugin.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/core/lib/Log/file.php" afterPath="$PROJECT_DIR$/dollarphp/lib/Log/file.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/core/lib/MonoLog.php" afterPath="$PROJECT_DIR$/dollarphp/lib/MonoLog.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/core/lib/Orm.php" afterPath="$PROJECT_DIR$/dollarphp/lib/Orm.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/core/lib/Plugin/ClickPlugin.php" afterPath="$PROJECT_DIR$/dollarphp/lib/Plugin/ClickPlugin.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/core/lib/Plugin/IPlugin.php" afterPath="$PROJECT_DIR$/dollarphp/lib/Plugin/IPlugin.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/core/lib/Plugin/NewsDetail.php" afterPath="$PROJECT_DIR$/dollarphp/lib/Plugin/NewsDetail.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/core/lib/Plugin/PluginGenerator.php" afterPath="$PROJECT_DIR$/dollarphp/lib/Plugin/PluginGenerator.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/core/lib/Router.php" afterPath="$PROJECT_DIR$/dollarphp/lib/Router.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/core/lib/conf.php" afterPath="$PROJECT_DIR$/dollarphp/lib/conf.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/core/lib/drive/log/Mysql.php" afterPath="$PROJECT_DIR$/dollarphp/lib/drive/log/Mysql.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/core/lib/drive/log/file.php" afterPath="$PROJECT_DIR$/dollarphp/lib/drive/log/file.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/core/lib/interfaces/ILog.php" afterPath="$PROJECT_DIR$/dollarphp/lib/interfaces/ILog.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/core/lib/model.php" afterPath="$PROJECT_DIR$/dollarphp/lib/model.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/core/lib/model_pdo.php" afterPath="$PROJECT_DIR$/dollarphp/lib/model_pdo.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/helper/Config.php" afterPath="$PROJECT_DIR$/dollarphp/helper/Config.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/helper/Log.php" afterPath="$PROJECT_DIR$/dollarphp/helper/Log.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/helper/MarkDown.php" afterPath="$PROJECT_DIR$/dollarphp/helper/MarkDown.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -69,8 +17,8 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="207">
-                <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+              <first_editor relative-caret-position="253">
+                <caret line="11" column="26" lean-forward="false" selection-start-line="11" selection-start-column="26" selection-end-line="11" selection-end-column="26" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -247,12 +195,12 @@
       <workItem from="1507261418724" duration="2097000" />
       <workItem from="1507282012257" duration="5787000" />
       <workItem from="1507347141364" duration="22331000" />
-      <workItem from="1507430802132" duration="18973000" />
+      <workItem from="1507430802132" duration="19056000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="54494000" />
+    <option name="totallyTimeSpent" value="54577000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -705,8 +653,8 @@
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="207">
-            <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <first_editor relative-caret-position="253">
+            <caret line="11" column="26" lean-forward="false" selection-start-line="11" selection-start-column="26" selection-end-line="11" selection-end-column="26" />
             <folding />
           </first_editor>
           <second_editor />
