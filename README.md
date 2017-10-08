@@ -1,6 +1,16 @@
 # DollarPHP
 A PHP Framework for my cat
 
+## 更新
+
+2017/10/7
+增加日志、Twig模板引擎、FastRouter路由
+
+2017/10/8 
+
+增加助手类Config/Log/MarkDown   分离路由配置   更改部分框架目录
+
+
 ## 前言
 此框架为个人项目，为什么要叫DollarPHP呢？因为我的喵叫 $ 。
 写这个框架纯粹是为了学习，有兴趣一起学习或者有任何建议吐槽的可以联系我
@@ -35,6 +45,7 @@ $dispatcher = \FastRoute\simpleDispatcher(function(\FastRoute\RouteCollector $r)
 > 匹配模式：控制器/方法/参数
     index/index/id/1
     即index 控制器下的 index 方法 参数为 id 值为 1
+
 
 
 ## IOC容器：
