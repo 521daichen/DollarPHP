@@ -26,9 +26,9 @@ class Config{
         return self::$instance->get($name,$file,$path);
     }
 
-    static function all()
+    static function all($file='config',$path='')
     {
         self::_getInstance();
-        return self::$instance->all();
+        return self::$instance->all($file,$path);
     }
 }

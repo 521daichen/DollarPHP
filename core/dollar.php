@@ -26,7 +26,6 @@ class dollar{
 //        \core\lib\log::init();
 //        \core\lib\log::log('test');
 
-
         $router = new \core\lib\Router();
         if(ROUTE_CONFIG){
             $router->run();
@@ -56,25 +55,5 @@ class dollar{
         }
     }
 
-    public function assign($name,$value){
-        $this->assign[$name] = $value;
-    }
-    public function display($file){
-        $file = APP.'/views/'.$file.'.html';
 
-        if(is_file($file)){
-
-//            extract($this->assign);
-            $loader = new \Twig_Loader_Filesystem(APP.'/views');
-            $twig = new \Twig_Environment($loader, array(
-                'cache' => DOLLAR.'/log/twig',
-                'debug'=>DEBUG
-            ));
-            $template = $twig->load('index.html');
-            $template->display($this->assign?$this->assign:'');
-
-//            include $file;
-        }
-
-    }
 }

@@ -16,7 +16,7 @@ class Controller {
 
     }
 
-    public function display(){
+    public function display($view){
         $loader = new \Twig_Loader_Filesystem(APP.'./views');
         $twig = new \Twig_Environment($loader, array(
             'debug'=>DEBUG,
@@ -24,7 +24,7 @@ class Controller {
             /* 'cache' => './compilation_cache', */
         ));
 
-        $template = $twig->load('index.html');
+        $template = $twig->load($view.'.html');
         $template->display($this->assigns?$this->assigns:'');
 
 //        echo $twig->render('index.html',$this->assigns);

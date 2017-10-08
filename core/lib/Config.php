@@ -61,9 +61,11 @@ class Config{
             }
         }
         $filePath = $path.'\\'.$file.'.php';
+
         if(is_dir($path)){
             if(is_file($filePath)){
                 $return = include $filePath;
+
                 return $return;
             }else{
                 throw new \Exception('没有找到配置文件');

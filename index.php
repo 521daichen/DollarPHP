@@ -11,16 +11,11 @@
  * 2、加载函数库
  * 3、启动框架
  */
-
 date_default_timezone_set("PRC");
-
 header('Content-type:text/html;charset=utf8');
 //定义当前框架所在的目录
 define('DOLLAR',realpath('./'));
-
 define('BASEDIR',__DIR__);
-
-
 //框架核心
 define('CORE',DOLLAR.'/core');
 //模块目录
@@ -31,22 +26,20 @@ define('APP',DOLLAR.'/'.MODULE);
 define('PLUGIN',false);
 //配置路由
 define('ROUTE_CONFIG',true);
-
 //调试模式
 define('DEBUG',true);
 
+//模块配置目录
+define('MODULE_CONFIG',DOLLAR.'\\'.MODULE.'\\config\\');
 include "vendor/autoload.php";
-
 if(DEBUG){
     $whoops = new \Whoops\Run;
     $whoops->pushHandler(new \Whoops\Handler\PrettyPageHandler);
     $whoops->register();
-
     ini_set('display_errors','On');
 }else{
     ini_set('display_errors','Off');
 }
-
 //加载公共函数库
 include CORE.'/common/function.php';
 //加载框架入口

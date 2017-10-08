@@ -34,7 +34,15 @@ class  Router{
      * 配置匹配
      */
     public function run(){
-        $dispatcher = \core\lib\conf::all('router');
+
+        //如果模块目录下有router.php的配置项则优先模块里的配置
+        $routerFile = MODULE_CONFIG.'\\'.'router.php';
+        if(is_file($routerFile)){
+            $dispatcher = \helper\Config::all('router',MODULE_CONFIG);
+
+        }else{
+            $dispatcher = \core\lib\conf::all('router');
+        }
 
         $httpMethod = $_SERVER['REQUEST_METHOD'];
         $uri = $_SERVER['REQUEST_URI'];
