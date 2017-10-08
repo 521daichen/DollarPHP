@@ -27,7 +27,7 @@ php composer.phar install
 https://github.com/nikic/FastRoute
 
 请在`index.php`下`define('ROUTE_CONFIG',true);`打开路由配置模式
-配置文件：`\core\config\router.php`
+配置文件：`\dollarphp\config\router.php`
 配置语法：上述文档所述。
 ```php
 $dispatcher = \FastRoute\simpleDispatcher(function(\FastRoute\RouteCollector $r) {
@@ -53,7 +53,7 @@ $dispatcher = \FastRoute\simpleDispatcher(function(\FastRoute\RouteCollector $r)
 IOC配置：
 `\core\config\Di.php`
 配置所需要的类文件和映射即可 如：
-` 'log'=>'\core\lib\Log\file'`
+` 'log'=>'\dollarphp\lib\Log\file'`
 
 使用方法：
 全局容器实例 `$dollarApp`
