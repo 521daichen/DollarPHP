@@ -20,12 +20,13 @@ define('DOLLAR',realpath('./'));
 
 define('BASEDIR',__DIR__);
 
+
 //框架核心
 define('CORE',DOLLAR.'/core');
 //模块目录
 define('MODULE','app');
 //项目目录
-define('APP',DOLLAR.'/app');
+define('APP',DOLLAR.'/'.MODULE);
 //插件模式
 define('PLUGIN',false);
 //配置路由

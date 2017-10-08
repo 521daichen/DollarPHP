@@ -8,18 +8,50 @@
 namespace app\controller;
 use app\validate\IndexValidate;
 use core\dollar;
+use core\lib\Controller;
 use core\lib\Log\file;
 use core\lib\model;
+use helper\Config;
+use helper\Log;
+use helper\MarkDown;
 use Symfony\Component\HttpFoundation\Request;
 
-class index extends dollar {
+class index extends Controller {
 
     public function index($id)
     {
+
         global $dollarApp;
 //        $orm = new \core\lib\Orm();
         $orm = $dollarApp->get('orm');
         $log = $dollarApp->get('log');
+
+
+        
+        echo MarkDown::text("    copy;"); # prints: <p>Hello <em>Parsedown</em>!</p>
+
+        exit();
+
+        MarkDown::text('ssdds');///////////////;
+
+//        $config = $dollarApp->get('config')->get('name');
+
+        $config = Config::get('name');
+        Log::log('error','sdsd');
+
+
+        echo $config;
+        exit();
+
+        $arr = [
+            '长江后浪推前浪',
+            '前浪死在沙滩上'
+        ];
+
+        $this->assign('daichen',$arr);
+        $this->display('index');
+
+
 
         $log->info('error','asdadss');
         $log->error('error','asdadss');

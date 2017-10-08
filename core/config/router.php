@@ -7,7 +7,7 @@
  */
 
 $dispatcher = \FastRoute\simpleDispatcher(function(\FastRoute\RouteCollector $r) {
-    $r->addRoute('POST', '/users', '\app\controller\index@index');
+    $r->addRoute('GET', '/users', '\app\controller\index@index');
     // {id} must be a number (\d+)
     $r->addRoute('GET', '/user/{id:\d+}', '\app\controller\index@getuser');
     // The /{title} suffix is optional

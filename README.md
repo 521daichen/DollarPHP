@@ -19,7 +19,7 @@ https://github.com/nikic/FastRoute
 请在`index.php`下`define('ROUTE_CONFIG',true);`打开路由配置模式
 配置文件：`\core\config\router.php`
 配置语法：上述文档所述。
-```
+```php
 $dispatcher = \FastRoute\simpleDispatcher(function(\FastRoute\RouteCollector $r) {
     $r->addRoute('POST', '/users', '\app\controller\index@index');
     // {id} must be a number (\d+)
@@ -46,13 +46,13 @@ IOC配置：
 
 使用方法：
 全局容器实例 `$dollarApp`
-```
+```php
 global $dollarApp;
 $logger = $dollarApp->get('log');
 $logger->......
 ```
 ## 日志:
-```
+```php
 global $dollarApp;
 $logger = $dollarApp->get('log');
 $logger->log($level,$message);
@@ -61,4 +61,20 @@ $logger->debug($message);
 $logger->info($message);
 $logger->warning($message);
 框架会自动在根目录下创建logs目录，并根据不同日志级别创建相应分类，自动创建每日目录防止日志过大，单log文件每小时创建一个防止文件过大。
+```
+
+
+## 助手类（让调用更加方便简洁）:
+```php
+MarkDown::text('ssdds');
+Config::get('name');
+Log::log('error','sdsd');
+
+```
+
+## MarkDown
+```php
+echo MarkDown::text('# 标题');
+支持markdown语法
+http://www.appinn.com/markdown/
 ```

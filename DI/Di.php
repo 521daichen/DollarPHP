@@ -15,6 +15,7 @@ class Di implements \ArrayAccess{
     public function get($name,$params=array()){
         //先从已经实例化的列表中查找
 
+
         if(isset($this->_instances[$name])){
 
             return $this->_instances[$name];
@@ -36,6 +37,7 @@ class Di implements \ArrayAccess{
         }elseif(is_string($concrete)){//字符串方式
             if(empty($params)){
                 $obj = new $concrete;
+
             }else{
                 //带参数的类实例化，使用反射
                 $class = new \ReflectionClass($concrete);

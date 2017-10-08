@@ -12,5 +12,7 @@ return array(
     'dollar'=>'\core\dollar',
     'logger'=>'\core\lib\MonoLog',
     'orm'=>'\core\lib\Orm',
-    'log'=>'\core\lib\Log\file'
+    'log'=>'\core\lib\Log\file',
+    'config'=>'\core\lib\Config',
+    'markdown'=>'\Parsedown',
 );
