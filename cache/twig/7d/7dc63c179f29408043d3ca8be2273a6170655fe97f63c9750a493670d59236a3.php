@@ -10,7 +10,7 @@ class __TwigTemplate_5b0ffa9ef4d30a52baefe506ec4cb374a516652c2533c3aea029e5c1dff
         // line 1
         $this->parent = $this->loadTemplate("layout.html", "/index.html", 1);
         $this->blocks = array(
-            'head' => array($this, 'block_head'),
+            'heads' => array($this, 'block_heads'),
         );
     }
 
@@ -28,7 +28,7 @@ class __TwigTemplate_5b0ffa9ef4d30a52baefe506ec4cb374a516652c2533c3aea029e5c1dff
     }
 
     // line 4
-    public function block_head($context, array $blocks = array())
+    public function block_heads($context, array $blocks = array())
     {
         // line 5
         echo "
@@ -75,7 +75,7 @@ class __TwigTemplate_5b0ffa9ef4d30a52baefe506ec4cb374a516652c2533c3aea029e5c1dff
         return new Twig_Source("{% extends \"layout.html\" %}
 {% import \"forms.html\" as forms %}
 
-{% block head%}
+{% block heads%}
 
 <p>{{ forms.input('username','ss','button') }}</p>
 

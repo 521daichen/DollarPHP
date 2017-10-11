@@ -30,6 +30,8 @@ class route{
             //控制器
             if(isset($pathArr[1])){
                 $this->controller = $pathArr[1];
+            }else{
+                $this->action = conf::get('CTRL','route');
             }
             unset($pathArr[1]);
             //方法

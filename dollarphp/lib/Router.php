@@ -25,6 +25,9 @@ class  Router{
 //        $ctrlfile = APP.'/controller/'.$controller.'.php';
         $ctrlClass = APP.'\\'.$module.'\\controller\\'.$controller;
 
+        var_export($ctrlClass);
+        exit();
+
         try{
             if(!class_exists($ctrlClass)){
                 throw new \ErrorException('没有找到此控制器，请检查请求格式或检查应用目录下是否有响应程序文件');
