@@ -1,0 +1,1996 @@
+文件夹 PATH 列表
+卷序列号为 5C70-5D88
+D:.
+│  .htaccess
+│  cat.jpg
+│  composer.json
+│  composer.lock
+│  composer.phar
+│  index.php
+│  list.txt
+│  README.md
+│  
+├─.idea
+│      DollarPHP.iml
+│      modules.xml
+│      vcs.xml
+│      workspace.xml
+│      
+├─app
+│  │  router.php
+│  │  
+│  ├─admin
+│  │  ├─config
+│  │  │      config.php
+│  │  │      db.php
+│  │  │      router.php
+│  │  │      
+│  │  ├─controller
+│  │  │      index.php
+│  │  │      
+│  │  ├─model
+│  │  │      dollarModel.php
+│  │  │      
+│  │  ├─validate
+│  │  │      BaseValidate.php
+│  │  │      IndexValidate.php
+│  │  │      
+│  │  └─views
+│  └─home
+│      ├─config
+│      │      config.php
+│      │      db.php
+│      │      router.php
+│      │      
+│      ├─controller
+│      │      index.php
+│      │      test.php
+│      │      
+│      ├─model
+│      │      dollarModel.php
+│      │      
+│      ├─plugin
+│      │      ClickPlugin.php
+│      │      ZanPlugin.php
+│      │      
+│      ├─validate
+│      │      BaseValidate.php
+│      │      IndexValidate.php
+│      │      
+│      └─views
+│          ├─index
+│          │      forms.html
+│          │      index.html
+│          │      layout.html
+│          │      
+│          └─test
+│                  index.html
+│                  
+├─cache
+│  └─twig
+│      ├─2f
+│      │      2febbe8e81b785b85c1f54e20012ab5cd4bae5d0b7a786c2c20cec8fa9a4aba9.php
+│      │      
+│      ├─30
+│      │      30816f05cd5217d89ce2d39a56c9a56704ffdab33d2ad45717ed79c4226dfa53.php
+│      │      
+│      ├─39
+│      │      39750529c00a91fa7bee6da6d1a44daef9f2962d2624487310b78efacba3c0a0.php
+│      │      
+│      ├─3a
+│      │      3a784d7335ac32439d0b905a11086d49ddd600a65796f41f9a70e2281775c322.php
+│      │      
+│      ├─6a
+│      │      6a73ff929f7fbf8037733f5908469003863f696c6dc9548a0e3d780209c911f0.php
+│      │      6a86f370ee1836109b70ea7bdb32d0cb7d527abdaf9345744eff345628e0f6a2.php
+│      │      
+│      ├─7c
+│      │      7c3eb8a7dc67b931bf6ad2d9bc3a2eff44f16992bb3115fd1bee3ef3ebed8102.php
+│      │      
+│      ├─7d
+│      │      7dc63c179f29408043d3ca8be2273a6170655fe97f63c9750a493670d59236a3.php
+│      │      
+│      ├─99
+│      │      99323e2e6860facf32ea5bafdafc9db2e67c0425faa37362b4ae64c7bca6c207.php
+│      │      
+│      ├─c2
+│      │      c2bce0410ca67c6955e8e9289280021b15fca3a8495691550fb18558113a6aaa.php
+│      │      
+│      ├─d5
+│      │      d58b41f81186aab6c9e151755ee0f4a91d8ee361bf8915f57ff82cdcde646a6f.php
+│      │      
+│      └─e8
+│              e8a0baf9162f91389cd0428eafd4391dd2f5c41e964b40e8c47fdf77f87e43ee.php
+│              
+├─dollarphp
+│  │  dollar.php
+│  │  init.php
+│  │  
+│  ├─common
+│  │      function.php
+│  │      
+│  ├─config
+│  │      db.php
+│  │      Di.php
+│  │      log.php
+│  │      route.php
+│  │      router.php
+│  │      
+│  ├─DI
+│  │      config.php
+│  │      Di.php
+│  │      DiService.php
+│  │      
+│  ├─helper
+│  │      Config.php
+│  │      Log.php
+│  │      MarkDown.php
+│  │      
+│  └─lib
+│      │  conf.php
+│      │  Config.php
+│      │  Controller.php
+│      │  Database.php
+│      │  Factory.php
+│      │  LoadPlugin.php
+│      │  model.php
+│      │  model_pdo.php
+│      │  MonoLog.php
+│      │  Orm.php
+│      │  route.php
+│      │  Router.php
+│      │  
+│      ├─Databases
+│      │      MySQL.php
+│      │      MySQLi.php
+│      │      PDO.php
+│      │      
+│      ├─drive
+│      │  └─log
+│      │          file.php
+│      │          Mysql.php
+│      │          
+│      ├─interfaces
+│      │      ILog.php
+│      │      
+│      ├─Log
+│      │      file.php
+│      │      
+│      └─Plugin
+│              ClickPlugin.php
+│              IPlugin.php
+│              NewsDetail.php
+│              PluginGenerator.php
+│              
+├─logs
+│  ├─debug
+│  │  └─20171008
+│  │          debug2017100800.log
+│  │          debug2017100810.log
+│  │          debug2017100811.log
+│  │          debug2017100812.log
+│  │          debug2017100813.log
+│  │          
+│  ├─error
+│  │  └─20171008
+│  │          error2017100800.log
+│  │          error2017100810.log
+│  │          error2017100811.log
+│  │          error2017100812.log
+│  │          error2017100813.log
+│  │          error2017100814.log
+│  │          error2017100815.log
+│  │          
+│  ├─info
+│  │  └─20171008
+│  │          info2017100800.log
+│  │          info2017100810.log
+│  │          info2017100811.log
+│  │          info2017100812.log
+│  │          info2017100813.log
+│  │          
+│  └─warning
+│      └─20171008
+│              warning2017100800.log
+│              
+├─public
+│  ├─bootstrap
+│  │  ├─css
+│  │  │      bootstrap-theme.css
+│  │  │      bootstrap-theme.css.map
+│  │  │      bootstrap-theme.min.css
+│  │  │      bootstrap-theme.min.css.map
+│  │  │      bootstrap.css
+│  │  │      bootstrap.css.map
+│  │  │      bootstrap.min.css
+│  │  │      bootstrap.min.css.map
+│  │  │      
+│  │  ├─fonts
+│  │  │      glyphicons-halflings-regular.eot
+│  │  │      glyphicons-halflings-regular.svg
+│  │  │      glyphicons-halflings-regular.ttf
+│  │  │      glyphicons-halflings-regular.woff
+│  │  │      glyphicons-halflings-regular.woff2
+│  │  │      
+│  │  └─js
+│  │          bootstrap.js
+│  │          bootstrap.min.js
+│  │          npm.js
+│  │          
+│  └─home
+│      └─css
+│              cover.css
+│              
+└─vendor
+    │  .gitignore
+    │  autoload.php
+    │  
+    ├─catfan
+    │  └─medoo
+    │      │  .gitattributes
+    │      │  .gitignore
+    │      │  composer.json
+    │      │  LICENSE
+    │      │  README.md
+    │      │  
+    │      └─src
+    │              Medoo.php
+    │              
+    ├─composer
+    │      autoload_classmap.php
+    │      autoload_files.php
+    │      autoload_namespaces.php
+    │      autoload_psr4.php
+    │      autoload_real.php
+    │      autoload_static.php
+    │      ClassLoader.php
+    │      installed.json
+    │      LICENSE
+    │      
+    ├─erusev
+    │  └─parsedown
+    │          composer.json
+    │          LICENSE.txt
+    │          Parsedown.php
+    │          README.md
+    │          
+    ├─filp
+    │  └─whoops
+    │      │  CHANGELOG.md
+    │      │  composer.json
+    │      │  LICENSE.md
+    │      │  
+    │      └─src
+    │          └─Whoops
+    │              │  Run.php
+    │              │  RunInterface.php
+    │              │  
+    │              ├─Exception
+    │              │      ErrorException.php
+    │              │      Formatter.php
+    │              │      Frame.php
+    │              │      FrameCollection.php
+    │              │      Inspector.php
+    │              │      
+    │              ├─Handler
+    │              │      CallbackHandler.php
+    │              │      Handler.php
+    │              │      HandlerInterface.php
+    │              │      JsonResponseHandler.php
+    │              │      PlainTextHandler.php
+    │              │      PrettyPageHandler.php
+    │              │      XmlResponseHandler.php
+    │              │      
+    │              ├─Resources
+    │              │  ├─css
+    │              │  │      whoops.base.css
+    │              │  │      
+    │              │  ├─js
+    │              │  │      clipboard.min.js
+    │              │  │      whoops.base.js
+    │              │  │      zepto.min.js
+    │              │  │      
+    │              │  └─views
+    │              │          env_details.html.php
+    │              │          frames_container.html.php
+    │              │          frames_description.html.php
+    │              │          frame_code.html.php
+    │              │          frame_list.html.php
+    │              │          header.html.php
+    │              │          header_outer.html.php
+    │              │          layout.html.php
+    │              │          panel_details.html.php
+    │              │          panel_details_outer.html.php
+    │              │          panel_left.html.php
+    │              │          panel_left_outer.html.php
+    │              │          
+    │              └─Util
+    │                      HtmlDumperOutput.php
+    │                      Misc.php
+    │                      SystemFacade.php
+    │                      TemplateHelper.php
+    │                      
+    ├─michelf
+    │  └─php-markdown
+    │      │  composer.json
+    │      │  License.md
+    │      │  Readme.md
+    │      │  Readme.php
+    │      │  
+    │      └─Michelf
+    │              Markdown.inc.php
+    │              Markdown.php
+    │              MarkdownExtra.inc.php
+    │              MarkdownExtra.php
+    │              MarkdownInterface.inc.php
+    │              MarkdownInterface.php
+    │              
+    ├─monolog
+    │  └─monolog
+    │      │  .php_cs
+    │      │  CHANGELOG.md
+    │      │  composer.json
+    │      │  LICENSE
+    │      │  phpunit.xml.dist
+    │      │  README.md
+    │      │  
+    │      ├─doc
+    │      │      01-usage.md
+    │      │      02-handlers-formatters-processors.md
+    │      │      03-utilities.md
+    │      │      04-extending.md
+    │      │      sockets.md
+    │      │      
+    │      ├─src
+    │      │  └─Monolog
+    │      │      │  ErrorHandler.php
+    │      │      │  Logger.php
+    │      │      │  Registry.php
+    │      │      │  
+    │      │      ├─Formatter
+    │      │      │      ChromePHPFormatter.php
+    │      │      │      ElasticaFormatter.php
+    │      │      │      FlowdockFormatter.php
+    │      │      │      FluentdFormatter.php
+    │      │      │      FormatterInterface.php
+    │      │      │      GelfMessageFormatter.php
+    │      │      │      HtmlFormatter.php
+    │      │      │      JsonFormatter.php
+    │      │      │      LineFormatter.php
+    │      │      │      LogglyFormatter.php
+    │      │      │      LogstashFormatter.php
+    │      │      │      MongoDBFormatter.php
+    │      │      │      NormalizerFormatter.php
+    │      │      │      ScalarFormatter.php
+    │      │      │      WildfireFormatter.php
+    │      │      │      
+    │      │      ├─Handler
+    │      │      │  │  AbstractHandler.php
+    │      │      │  │  AbstractProcessingHandler.php
+    │      │      │  │  AbstractSyslogHandler.php
+    │      │      │  │  AmqpHandler.php
+    │      │      │  │  BrowserConsoleHandler.php
+    │      │      │  │  BufferHandler.php
+    │      │      │  │  ChromePHPHandler.php
+    │      │      │  │  CouchDBHandler.php
+    │      │      │  │  CubeHandler.php
+    │      │      │  │  DeduplicationHandler.php
+    │      │      │  │  DoctrineCouchDBHandler.php
+    │      │      │  │  DynamoDbHandler.php
+    │      │      │  │  ElasticSearchHandler.php
+    │      │      │  │  ErrorLogHandler.php
+    │      │      │  │  FilterHandler.php
+    │      │      │  │  FingersCrossedHandler.php
+    │      │      │  │  FirePHPHandler.php
+    │      │      │  │  FleepHookHandler.php
+    │      │      │  │  FlowdockHandler.php
+    │      │      │  │  GelfHandler.php
+    │      │      │  │  GroupHandler.php
+    │      │      │  │  HandlerInterface.php
+    │      │      │  │  HandlerWrapper.php
+    │      │      │  │  HipChatHandler.php
+    │      │      │  │  IFTTTHandler.php
+    │      │      │  │  LogEntriesHandler.php
+    │      │      │  │  LogglyHandler.php
+    │      │      │  │  MailHandler.php
+    │      │      │  │  MandrillHandler.php
+    │      │      │  │  MissingExtensionException.php
+    │      │      │  │  MongoDBHandler.php
+    │      │      │  │  NativeMailerHandler.php
+    │      │      │  │  NewRelicHandler.php
+    │      │      │  │  NullHandler.php
+    │      │      │  │  PHPConsoleHandler.php
+    │      │      │  │  PsrHandler.php
+    │      │      │  │  PushoverHandler.php
+    │      │      │  │  RavenHandler.php
+    │      │      │  │  RedisHandler.php
+    │      │      │  │  RollbarHandler.php
+    │      │      │  │  RotatingFileHandler.php
+    │      │      │  │  SamplingHandler.php
+    │      │      │  │  SlackbotHandler.php
+    │      │      │  │  SlackHandler.php
+    │      │      │  │  SlackWebhookHandler.php
+    │      │      │  │  SocketHandler.php
+    │      │      │  │  StreamHandler.php
+    │      │      │  │  SwiftMailerHandler.php
+    │      │      │  │  SyslogHandler.php
+    │      │      │  │  SyslogUdpHandler.php
+    │      │      │  │  TestHandler.php
+    │      │      │  │  WhatFailureGroupHandler.php
+    │      │      │  │  ZendMonitorHandler.php
+    │      │      │  │  
+    │      │      │  ├─Curl
+    │      │      │  │      Util.php
+    │      │      │  │      
+    │      │      │  ├─FingersCrossed
+    │      │      │  │      ActivationStrategyInterface.php
+    │      │      │  │      ChannelLevelActivationStrategy.php
+    │      │      │  │      ErrorLevelActivationStrategy.php
+    │      │      │  │      
+    │      │      │  ├─Slack
+    │      │      │  │      SlackRecord.php
+    │      │      │  │      
+    │      │      │  └─SyslogUdp
+    │      │      │          UdpSocket.php
+    │      │      │          
+    │      │      └─Processor
+    │      │              GitProcessor.php
+    │      │              IntrospectionProcessor.php
+    │      │              MemoryPeakUsageProcessor.php
+    │      │              MemoryProcessor.php
+    │      │              MemoryUsageProcessor.php
+    │      │              MercurialProcessor.php
+    │      │              ProcessIdProcessor.php
+    │      │              PsrLogMessageProcessor.php
+    │      │              TagProcessor.php
+    │      │              UidProcessor.php
+    │      │              WebProcessor.php
+    │      │              
+    │      └─tests
+    │          └─Monolog
+    │              │  ErrorHandlerTest.php
+    │              │  LoggerTest.php
+    │              │  PsrLogCompatTest.php
+    │              │  RegistryTest.php
+    │              │  TestCase.php
+    │              │  
+    │              ├─Formatter
+    │              │      ChromePHPFormatterTest.php
+    │              │      ElasticaFormatterTest.php
+    │              │      FlowdockFormatterTest.php
+    │              │      FluentdFormatterTest.php
+    │              │      GelfMessageFormatterTest.php
+    │              │      JsonFormatterTest.php
+    │              │      LineFormatterTest.php
+    │              │      LogglyFormatterTest.php
+    │              │      LogstashFormatterTest.php
+    │              │      MongoDBFormatterTest.php
+    │              │      NormalizerFormatterTest.php
+    │              │      ScalarFormatterTest.php
+    │              │      WildfireFormatterTest.php
+    │              │      
+    │              ├─Handler
+    │              │  │  AbstractHandlerTest.php
+    │              │  │  AbstractProcessingHandlerTest.php
+    │              │  │  AmqpHandlerTest.php
+    │              │  │  BrowserConsoleHandlerTest.php
+    │              │  │  BufferHandlerTest.php
+    │              │  │  ChromePHPHandlerTest.php
+    │              │  │  CouchDBHandlerTest.php
+    │              │  │  DeduplicationHandlerTest.php
+    │              │  │  DoctrineCouchDBHandlerTest.php
+    │              │  │  DynamoDbHandlerTest.php
+    │              │  │  ElasticSearchHandlerTest.php
+    │              │  │  ErrorLogHandlerTest.php
+    │              │  │  FilterHandlerTest.php
+    │              │  │  FingersCrossedHandlerTest.php
+    │              │  │  FirePHPHandlerTest.php
+    │              │  │  FleepHookHandlerTest.php
+    │              │  │  FlowdockHandlerTest.php
+    │              │  │  GelfHandlerLegacyTest.php
+    │              │  │  GelfHandlerTest.php
+    │              │  │  GelfMockMessagePublisher.php
+    │              │  │  GroupHandlerTest.php
+    │              │  │  HandlerWrapperTest.php
+    │              │  │  HipChatHandlerTest.php
+    │              │  │  LogEntriesHandlerTest.php
+    │              │  │  MailHandlerTest.php
+    │              │  │  MockRavenClient.php
+    │              │  │  MongoDBHandlerTest.php
+    │              │  │  NativeMailerHandlerTest.php
+    │              │  │  NewRelicHandlerTest.php
+    │              │  │  NullHandlerTest.php
+    │              │  │  PHPConsoleHandlerTest.php
+    │              │  │  PsrHandlerTest.php
+    │              │  │  PushoverHandlerTest.php
+    │              │  │  RavenHandlerTest.php
+    │              │  │  RedisHandlerTest.php
+    │              │  │  RollbarHandlerTest.php
+    │              │  │  RotatingFileHandlerTest.php
+    │              │  │  SamplingHandlerTest.php
+    │              │  │  SlackbotHandlerTest.php
+    │              │  │  SlackHandlerTest.php
+    │              │  │  SlackWebhookHandlerTest.php
+    │              │  │  SocketHandlerTest.php
+    │              │  │  StreamHandlerTest.php
+    │              │  │  SwiftMailerHandlerTest.php
+    │              │  │  SyslogHandlerTest.php
+    │              │  │  SyslogUdpHandlerTest.php
+    │              │  │  TestHandlerTest.php
+    │              │  │  UdpSocketTest.php
+    │              │  │  WhatFailureGroupHandlerTest.php
+    │              │  │  ZendMonitorHandlerTest.php
+    │              │  │  
+    │              │  ├─Fixtures
+    │              │  │      .gitkeep
+    │              │  │      
+    │              │  └─Slack
+    │              │          SlackRecordTest.php
+    │              │          
+    │              └─Processor
+    │                      GitProcessorTest.php
+    │                      IntrospectionProcessorTest.php
+    │                      MemoryPeakUsageProcessorTest.php
+    │                      MemoryUsageProcessorTest.php
+    │                      MercurialProcessorTest.php
+    │                      ProcessIdProcessorTest.php
+    │                      PsrLogMessageProcessorTest.php
+    │                      TagProcessorTest.php
+    │                      UidProcessorTest.php
+    │                      WebProcessorTest.php
+    │                      
+    ├─nikic
+    │  └─fast-route
+    │      │  .gitignore
+    │      │  .hhconfig
+    │      │  .travis.yml
+    │      │  composer.json
+    │      │  FastRoute.hhi
+    │      │  LICENSE
+    │      │  phpunit.xml
+    │      │  README.md
+    │      │  
+    │      ├─src
+    │      │  │  BadRouteException.php
+    │      │  │  bootstrap.php
+    │      │  │  DataGenerator.php
+    │      │  │  Dispatcher.php
+    │      │  │  functions.php
+    │      │  │  Route.php
+    │      │  │  RouteCollector.php
+    │      │  │  RouteParser.php
+    │      │  │  
+    │      │  ├─DataGenerator
+    │      │  │      CharCountBased.php
+    │      │  │      GroupCountBased.php
+    │      │  │      GroupPosBased.php
+    │      │  │      MarkBased.php
+    │      │  │      RegexBasedAbstract.php
+    │      │  │      
+    │      │  ├─Dispatcher
+    │      │  │      CharCountBased.php
+    │      │  │      GroupCountBased.php
+    │      │  │      GroupPosBased.php
+    │      │  │      MarkBased.php
+    │      │  │      RegexBasedAbstract.php
+    │      │  │      
+    │      │  └─RouteParser
+    │      │          Std.php
+    │      │          
+    │      └─test
+    │          │  bootstrap.php
+    │          │  RouteCollectorTest.php
+    │          │  
+    │          ├─Dispatcher
+    │          │      CharCountBasedTest.php
+    │          │      DispatcherTest.php
+    │          │      GroupCountBasedTest.php
+    │          │      GroupPosBasedTest.php
+    │          │      MarkBasedTest.php
+    │          │      
+    │          ├─HackTypechecker
+    │          │  │  HackTypecheckerTest.php
+    │          │  │  
+    │          │  └─fixtures
+    │          │          all_options.php
+    │          │          empty_options.php
+    │          │          no_options.php
+    │          │          
+    │          └─RouteParser
+    │                  StdTest.php
+    │                  
+    ├─psr
+    │  └─log
+    │      │  .gitignore
+    │      │  composer.json
+    │      │  LICENSE
+    │      │  README.md
+    │      │  
+    │      └─Psr
+    │          └─Log
+    │              │  AbstractLogger.php
+    │              │  InvalidArgumentException.php
+    │              │  LoggerAwareInterface.php
+    │              │  LoggerAwareTrait.php
+    │              │  LoggerInterface.php
+    │              │  LoggerTrait.php
+    │              │  LogLevel.php
+    │              │  NullLogger.php
+    │              │  
+    │              └─Test
+    │                      LoggerInterfaceTest.php
+    │                      
+    ├─symfony
+    │  ├─http-foundation
+    │  │  │  .gitignore
+    │  │  │  AcceptHeader.php
+    │  │  │  AcceptHeaderItem.php
+    │  │  │  ApacheRequest.php
+    │  │  │  BinaryFileResponse.php
+    │  │  │  CHANGELOG.md
+    │  │  │  composer.json
+    │  │  │  Cookie.php
+    │  │  │  ExpressionRequestMatcher.php
+    │  │  │  FileBag.php
+    │  │  │  HeaderBag.php
+    │  │  │  IpUtils.php
+    │  │  │  JsonResponse.php
+    │  │  │  LICENSE
+    │  │  │  ParameterBag.php
+    │  │  │  phpunit.xml.dist
+    │  │  │  README.md
+    │  │  │  RedirectResponse.php
+    │  │  │  Request.php
+    │  │  │  RequestMatcher.php
+    │  │  │  RequestMatcherInterface.php
+    │  │  │  RequestStack.php
+    │  │  │  Response.php
+    │  │  │  ResponseHeaderBag.php
+    │  │  │  ServerBag.php
+    │  │  │  StreamedResponse.php
+    │  │  │  
+    │  │  ├─Exception
+    │  │  │      ConflictingHeadersException.php
+    │  │  │      RequestExceptionInterface.php
+    │  │  │      SuspiciousOperationException.php
+    │  │  │      
+    │  │  ├─File
+    │  │  │  │  File.php
+    │  │  │  │  Stream.php
+    │  │  │  │  UploadedFile.php
+    │  │  │  │  
+    │  │  │  ├─Exception
+    │  │  │  │      AccessDeniedException.php
+    │  │  │  │      FileException.php
+    │  │  │  │      FileNotFoundException.php
+    │  │  │  │      UnexpectedTypeException.php
+    │  │  │  │      UploadException.php
+    │  │  │  │      
+    │  │  │  └─MimeType
+    │  │  │          ExtensionGuesser.php
+    │  │  │          ExtensionGuesserInterface.php
+    │  │  │          FileBinaryMimeTypeGuesser.php
+    │  │  │          FileinfoMimeTypeGuesser.php
+    │  │  │          MimeTypeExtensionGuesser.php
+    │  │  │          MimeTypeGuesser.php
+    │  │  │          MimeTypeGuesserInterface.php
+    │  │  │          
+    │  │  ├─Session
+    │  │  │  │  Session.php
+    │  │  │  │  SessionBagInterface.php
+    │  │  │  │  SessionInterface.php
+    │  │  │  │  
+    │  │  │  ├─Attribute
+    │  │  │  │      AttributeBag.php
+    │  │  │  │      AttributeBagInterface.php
+    │  │  │  │      NamespacedAttributeBag.php
+    │  │  │  │      
+    │  │  │  ├─Flash
+    │  │  │  │      AutoExpireFlashBag.php
+    │  │  │  │      FlashBag.php
+    │  │  │  │      FlashBagInterface.php
+    │  │  │  │      
+    │  │  │  └─Storage
+    │  │  │      │  MetadataBag.php
+    │  │  │      │  MockArraySessionStorage.php
+    │  │  │      │  MockFileSessionStorage.php
+    │  │  │      │  NativeSessionStorage.php
+    │  │  │      │  PhpBridgeSessionStorage.php
+    │  │  │      │  SessionStorageInterface.php
+    │  │  │      │  
+    │  │  │      ├─Handler
+    │  │  │      │      MemcachedSessionHandler.php
+    │  │  │      │      MemcacheSessionHandler.php
+    │  │  │      │      MongoDbSessionHandler.php
+    │  │  │      │      NativeFileSessionHandler.php
+    │  │  │      │      NativeSessionHandler.php
+    │  │  │      │      NullSessionHandler.php
+    │  │  │      │      PdoSessionHandler.php
+    │  │  │      │      WriteCheckSessionHandler.php
+    │  │  │      │      
+    │  │  │      └─Proxy
+    │  │  │              AbstractProxy.php
+    │  │  │              NativeProxy.php
+    │  │  │              SessionHandlerProxy.php
+    │  │  │              
+    │  │  └─Tests
+    │  │      │  AcceptHeaderItemTest.php
+    │  │      │  AcceptHeaderTest.php
+    │  │      │  ApacheRequestTest.php
+    │  │      │  BinaryFileResponseTest.php
+    │  │      │  CookieTest.php
+    │  │      │  ExpressionRequestMatcherTest.php
+    │  │      │  FileBagTest.php
+    │  │      │  HeaderBagTest.php
+    │  │      │  IpUtilsTest.php
+    │  │      │  JsonResponseTest.php
+    │  │      │  ParameterBagTest.php
+    │  │      │  RedirectResponseTest.php
+    │  │      │  RequestMatcherTest.php
+    │  │      │  RequestStackTest.php
+    │  │      │  RequestTest.php
+    │  │      │  ResponseHeaderBagTest.php
+    │  │      │  ResponseTest.php
+    │  │      │  ResponseTestCase.php
+    │  │      │  ServerBagTest.php
+    │  │      │  StreamedResponseTest.php
+    │  │      │  
+    │  │      ├─File
+    │  │      │  │  FakeFile.php
+    │  │      │  │  FileTest.php
+    │  │      │  │  UploadedFileTest.php
+    │  │      │  │  
+    │  │      │  ├─Fixtures
+    │  │      │  │  │  .unknownextension
+    │  │      │  │  │  other-file.example
+    │  │      │  │  │  test
+    │  │      │  │  │  test.gif
+    │  │      │  │  │  
+    │  │      │  │  └─directory
+    │  │      │  │          .empty
+    │  │      │  │          
+    │  │      │  └─MimeType
+    │  │      │          MimeTypeTest.php
+    │  │      │          
+    │  │      ├─schema
+    │  │      │      http-status-codes.rng
+    │  │      │      iana-registry.rng
+    │  │      │      
+    │  │      └─Session
+    │  │          │  SessionTest.php
+    │  │          │  
+    │  │          ├─Attribute
+    │  │          │      AttributeBagTest.php
+    │  │          │      NamespacedAttributeBagTest.php
+    │  │          │      
+    │  │          ├─Flash
+    │  │          │      AutoExpireFlashBagTest.php
+    │  │          │      FlashBagTest.php
+    │  │          │      
+    │  │          └─Storage
+    │  │              │  MetadataBagTest.php
+    │  │              │  MockArraySessionStorageTest.php
+    │  │              │  MockFileSessionStorageTest.php
+    │  │              │  NativeSessionStorageTest.php
+    │  │              │  PhpBridgeSessionStorageTest.php
+    │  │              │  
+    │  │              ├─Handler
+    │  │              │      MemcachedSessionHandlerTest.php
+    │  │              │      MemcacheSessionHandlerTest.php
+    │  │              │      MongoDbSessionHandlerTest.php
+    │  │              │      NativeFileSessionHandlerTest.php
+    │  │              │      NativeSessionHandlerTest.php
+    │  │              │      NullSessionHandlerTest.php
+    │  │              │      PdoSessionHandlerTest.php
+    │  │              │      WriteCheckSessionHandlerTest.php
+    │  │              │      
+    │  │              └─Proxy
+    │  │                      AbstractProxyTest.php
+    │  │                      NativeProxyTest.php
+    │  │                      SessionHandlerProxyTest.php
+    │  │                      
+    │  ├─polyfill-mbstring
+    │  │  │  bootstrap.php
+    │  │  │  composer.json
+    │  │  │  LICENSE
+    │  │  │  Mbstring.php
+    │  │  │  README.md
+    │  │  │  
+    │  │  └─Resources
+    │  │      └─unidata
+    │  │              lowerCase.php
+    │  │              upperCase.php
+    │  │              
+    │  └─var-dumper
+    │      │  .gitignore
+    │      │  CHANGELOG.md
+    │      │  composer.json
+    │      │  LICENSE
+    │      │  phpunit.xml.dist
+    │      │  README.md
+    │      │  VarDumper.php
+    │      │  
+    │      ├─Caster
+    │      │      AmqpCaster.php
+    │      │      ArgsStub.php
+    │      │      Caster.php
+    │      │      ClassStub.php
+    │      │      ConstStub.php
+    │      │      CutArrayStub.php
+    │      │      CutStub.php
+    │      │      DoctrineCaster.php
+    │      │      DOMCaster.php
+    │      │      EnumStub.php
+    │      │      ExceptionCaster.php
+    │      │      FrameStub.php
+    │      │      LinkStub.php
+    │      │      MongoCaster.php
+    │      │      PdoCaster.php
+    │      │      PgSqlCaster.php
+    │      │      RedisCaster.php
+    │      │      ReflectionCaster.php
+    │      │      ResourceCaster.php
+    │      │      SplCaster.php
+    │      │      StubCaster.php
+    │      │      SymfonyCaster.php
+    │      │      TraceStub.php
+    │      │      XmlReaderCaster.php
+    │      │      XmlResourceCaster.php
+    │      │      
+    │      ├─Cloner
+    │      │      AbstractCloner.php
+    │      │      ClonerInterface.php
+    │      │      Cursor.php
+    │      │      Data.php
+    │      │      DumperInterface.php
+    │      │      Stub.php
+    │      │      VarCloner.php
+    │      │      
+    │      ├─Dumper
+    │      │      AbstractDumper.php
+    │      │      CliDumper.php
+    │      │      DataDumperInterface.php
+    │      │      HtmlDumper.php
+    │      │      
+    │      ├─Exception
+    │      │      ThrowingCasterException.php
+    │      │      
+    │      ├─Resources
+    │      │  └─functions
+    │      │          dump.php
+    │      │          
+    │      ├─Test
+    │      │      VarDumperTestTrait.php
+    │      │      
+    │      └─Tests
+    │          ├─Caster
+    │          │      CasterTest.php
+    │          │      ExceptionCasterTest.php
+    │          │      PdoCasterTest.php
+    │          │      RedisCasterTest.php
+    │          │      ReflectionCasterTest.php
+    │          │      SplCasterTest.php
+    │          │      StubCasterTest.php
+    │          │      XmlReaderCasterTest.php
+    │          │      
+    │          ├─Cloner
+    │          │      DataTest.php
+    │          │      VarClonerTest.php
+    │          │      
+    │          ├─Dumper
+    │          │      CliDumperTest.php
+    │          │      HtmlDumperTest.php
+    │          │      
+    │          ├─Fixtures
+    │          │      dumb-var.php
+    │          │      FooInterface.php
+    │          │      GeneratorDemo.php
+    │          │      NotLoadableClass.php
+    │          │      Twig.php
+    │          │      xml_reader.xml
+    │          │      
+    │          └─Test
+    │                  VarDumperTestTraitTest.php
+    │                  
+    ├─twig
+    │  └─twig
+    │      │  .editorconfig
+    │      │  .gitignore
+    │      │  .php_cs.dist
+    │      │  .travis.yml
+    │      │  CHANGELOG
+    │      │  composer.json
+    │      │  LICENSE
+    │      │  phpunit.xml.dist
+    │      │  README.rst
+    │      │  
+    │      ├─doc
+    │      │  │  advanced.rst
+    │      │  │  advanced_legacy.rst
+    │      │  │  api.rst
+    │      │  │  coding_standards.rst
+    │      │  │  deprecated.rst
+    │      │  │  index.rst
+    │      │  │  installation.rst
+    │      │  │  internals.rst
+    │      │  │  intro.rst
+    │      │  │  recipes.rst
+    │      │  │  templates.rst
+    │      │  │  
+    │      │  ├─filters
+    │      │  │      abs.rst
+    │      │  │      batch.rst
+    │      │  │      capitalize.rst
+    │      │  │      convert_encoding.rst
+    │      │  │      date.rst
+    │      │  │      date_modify.rst
+    │      │  │      default.rst
+    │      │  │      escape.rst
+    │      │  │      first.rst
+    │      │  │      format.rst
+    │      │  │      index.rst
+    │      │  │      join.rst
+    │      │  │      json_encode.rst
+    │      │  │      keys.rst
+    │      │  │      last.rst
+    │      │  │      length.rst
+    │      │  │      lower.rst
+    │      │  │      merge.rst
+    │      │  │      nl2br.rst
+    │      │  │      number_format.rst
+    │      │  │      raw.rst
+    │      │  │      replace.rst
+    │      │  │      reverse.rst
+    │      │  │      round.rst
+    │      │  │      slice.rst
+    │      │  │      sort.rst
+    │      │  │      split.rst
+    │      │  │      striptags.rst
+    │      │  │      title.rst
+    │      │  │      trim.rst
+    │      │  │      upper.rst
+    │      │  │      url_encode.rst
+    │      │  │      
+    │      │  ├─functions
+    │      │  │      attribute.rst
+    │      │  │      block.rst
+    │      │  │      constant.rst
+    │      │  │      cycle.rst
+    │      │  │      date.rst
+    │      │  │      dump.rst
+    │      │  │      include.rst
+    │      │  │      index.rst
+    │      │  │      max.rst
+    │      │  │      min.rst
+    │      │  │      parent.rst
+    │      │  │      random.rst
+    │      │  │      range.rst
+    │      │  │      source.rst
+    │      │  │      template_from_string.rst
+    │      │  │      
+    │      │  ├─tags
+    │      │  │      autoescape.rst
+    │      │  │      block.rst
+    │      │  │      do.rst
+    │      │  │      embed.rst
+    │      │  │      extends.rst
+    │      │  │      filter.rst
+    │      │  │      flush.rst
+    │      │  │      for.rst
+    │      │  │      from.rst
+    │      │  │      if.rst
+    │      │  │      import.rst
+    │      │  │      include.rst
+    │      │  │      index.rst
+    │      │  │      macro.rst
+    │      │  │      sandbox.rst
+    │      │  │      set.rst
+    │      │  │      spaceless.rst
+    │      │  │      use.rst
+    │      │  │      verbatim.rst
+    │      │  │      with.rst
+    │      │  │      
+    │      │  └─tests
+    │      │          constant.rst
+    │      │          defined.rst
+    │      │          divisibleby.rst
+    │      │          empty.rst
+    │      │          even.rst
+    │      │          index.rst
+    │      │          iterable.rst
+    │      │          null.rst
+    │      │          odd.rst
+    │      │          sameas.rst
+    │      │          
+    │      ├─ext
+    │      │  └─twig
+    │      │          .gitignore
+    │      │          config.m4
+    │      │          config.w32
+    │      │          php_twig.h
+    │      │          twig.c
+    │      │          
+    │      ├─lib
+    │      │  └─Twig
+    │      │      │  Autoloader.php
+    │      │      │  BaseNodeVisitor.php
+    │      │      │  CacheInterface.php
+    │      │      │  Compiler.php
+    │      │      │  CompilerInterface.php
+    │      │      │  ContainerRuntimeLoader.php
+    │      │      │  Environment.php
+    │      │      │  Error.php
+    │      │      │  ExistsLoaderInterface.php
+    │      │      │  ExpressionParser.php
+    │      │      │  Extension.php
+    │      │      │  ExtensionInterface.php
+    │      │      │  FactoryRuntimeLoader.php
+    │      │      │  FileExtensionEscapingStrategy.php
+    │      │      │  Filter.php
+    │      │      │  FilterCallableInterface.php
+    │      │      │  FilterInterface.php
+    │      │      │  Function.php
+    │      │      │  FunctionCallableInterface.php
+    │      │      │  FunctionInterface.php
+    │      │      │  Lexer.php
+    │      │      │  LexerInterface.php
+    │      │      │  LoaderInterface.php
+    │      │      │  Markup.php
+    │      │      │  Node.php
+    │      │      │  NodeCaptureInterface.php
+    │      │      │  NodeInterface.php
+    │      │      │  NodeOutputInterface.php
+    │      │      │  NodeTraverser.php
+    │      │      │  NodeVisitorInterface.php
+    │      │      │  Parser.php
+    │      │      │  ParserInterface.php
+    │      │      │  RuntimeLoaderInterface.php
+    │      │      │  SimpleFilter.php
+    │      │      │  SimpleFunction.php
+    │      │      │  SimpleTest.php
+    │      │      │  Source.php
+    │      │      │  SourceContextLoaderInterface.php
+    │      │      │  Template.php
+    │      │      │  TemplateInterface.php
+    │      │      │  TemplateWrapper.php
+    │      │      │  Test.php
+    │      │      │  TestCallableInterface.php
+    │      │      │  TestInterface.php
+    │      │      │  Token.php
+    │      │      │  TokenParser.php
+    │      │      │  TokenParserBroker.php
+    │      │      │  TokenParserBrokerInterface.php
+    │      │      │  TokenParserInterface.php
+    │      │      │  TokenStream.php
+    │      │      │  
+    │      │      ├─Cache
+    │      │      │      Filesystem.php
+    │      │      │      Null.php
+    │      │      │      
+    │      │      ├─Error
+    │      │      │      Loader.php
+    │      │      │      Runtime.php
+    │      │      │      Syntax.php
+    │      │      │      
+    │      │      ├─Extension
+    │      │      │      Core.php
+    │      │      │      Debug.php
+    │      │      │      Escaper.php
+    │      │      │      GlobalsInterface.php
+    │      │      │      InitRuntimeInterface.php
+    │      │      │      Optimizer.php
+    │      │      │      Profiler.php
+    │      │      │      Sandbox.php
+    │      │      │      Staging.php
+    │      │      │      StringLoader.php
+    │      │      │      
+    │      │      ├─Filter
+    │      │      │      Function.php
+    │      │      │      Method.php
+    │      │      │      Node.php
+    │      │      │      
+    │      │      ├─Function
+    │      │      │      Function.php
+    │      │      │      Method.php
+    │      │      │      Node.php
+    │      │      │      
+    │      │      ├─Loader
+    │      │      │      Array.php
+    │      │      │      Chain.php
+    │      │      │      Filesystem.php
+    │      │      │      String.php
+    │      │      │      
+    │      │      ├─Node
+    │      │      │  │  AutoEscape.php
+    │      │      │  │  Block.php
+    │      │      │  │  BlockReference.php
+    │      │      │  │  Body.php
+    │      │      │  │  CheckSecurity.php
+    │      │      │  │  Do.php
+    │      │      │  │  Embed.php
+    │      │      │  │  Expression.php
+    │      │      │  │  Flush.php
+    │      │      │  │  For.php
+    │      │      │  │  ForLoop.php
+    │      │      │  │  If.php
+    │      │      │  │  Import.php
+    │      │      │  │  Include.php
+    │      │      │  │  Macro.php
+    │      │      │  │  Module.php
+    │      │      │  │  Print.php
+    │      │      │  │  Sandbox.php
+    │      │      │  │  SandboxedPrint.php
+    │      │      │  │  Set.php
+    │      │      │  │  SetTemp.php
+    │      │      │  │  Spaceless.php
+    │      │      │  │  Text.php
+    │      │      │  │  With.php
+    │      │      │  │  
+    │      │      │  └─Expression
+    │      │      │      │  Array.php
+    │      │      │      │  AssignName.php
+    │      │      │      │  Binary.php
+    │      │      │      │  BlockReference.php
+    │      │      │      │  Call.php
+    │      │      │      │  Conditional.php
+    │      │      │      │  Constant.php
+    │      │      │      │  ExtensionReference.php
+    │      │      │      │  Filter.php
+    │      │      │      │  Function.php
+    │      │      │      │  GetAttr.php
+    │      │      │      │  MethodCall.php
+    │      │      │      │  Name.php
+    │      │      │      │  NullCoalesce.php
+    │      │      │      │  Parent.php
+    │      │      │      │  TempName.php
+    │      │      │      │  Test.php
+    │      │      │      │  Unary.php
+    │      │      │      │  
+    │      │      │      ├─Binary
+    │      │      │      │      Add.php
+    │      │      │      │      And.php
+    │      │      │      │      BitwiseAnd.php
+    │      │      │      │      BitwiseOr.php
+    │      │      │      │      BitwiseXor.php
+    │      │      │      │      Concat.php
+    │      │      │      │      Div.php
+    │      │      │      │      EndsWith.php
+    │      │      │      │      Equal.php
+    │      │      │      │      FloorDiv.php
+    │      │      │      │      Greater.php
+    │      │      │      │      GreaterEqual.php
+    │      │      │      │      In.php
+    │      │      │      │      Less.php
+    │      │      │      │      LessEqual.php
+    │      │      │      │      Matches.php
+    │      │      │      │      Mod.php
+    │      │      │      │      Mul.php
+    │      │      │      │      NotEqual.php
+    │      │      │      │      NotIn.php
+    │      │      │      │      Or.php
+    │      │      │      │      Power.php
+    │      │      │      │      Range.php
+    │      │      │      │      StartsWith.php
+    │      │      │      │      Sub.php
+    │      │      │      │      
+    │      │      │      ├─Filter
+    │      │      │      │      Default.php
+    │      │      │      │      
+    │      │      │      ├─Test
+    │      │      │      │      Constant.php
+    │      │      │      │      Defined.php
+    │      │      │      │      Divisibleby.php
+    │      │      │      │      Even.php
+    │      │      │      │      Null.php
+    │      │      │      │      Odd.php
+    │      │      │      │      Sameas.php
+    │      │      │      │      
+    │      │      │      └─Unary
+    │      │      │              Neg.php
+    │      │      │              Not.php
+    │      │      │              Pos.php
+    │      │      │              
+    │      │      ├─NodeVisitor
+    │      │      │      Escaper.php
+    │      │      │      Optimizer.php
+    │      │      │      SafeAnalysis.php
+    │      │      │      Sandbox.php
+    │      │      │      
+    │      │      ├─Profiler
+    │      │      │  │  Profile.php
+    │      │      │  │  
+    │      │      │  ├─Dumper
+    │      │      │  │      Base.php
+    │      │      │  │      Blackfire.php
+    │      │      │  │      Html.php
+    │      │      │  │      Text.php
+    │      │      │  │      
+    │      │      │  ├─Node
+    │      │      │  │      EnterProfile.php
+    │      │      │  │      LeaveProfile.php
+    │      │      │  │      
+    │      │      │  └─NodeVisitor
+    │      │      │          Profiler.php
+    │      │      │          
+    │      │      ├─Sandbox
+    │      │      │      SecurityError.php
+    │      │      │      SecurityNotAllowedFilterError.php
+    │      │      │      SecurityNotAllowedFunctionError.php
+    │      │      │      SecurityNotAllowedMethodError.php
+    │      │      │      SecurityNotAllowedPropertyError.php
+    │      │      │      SecurityNotAllowedTagError.php
+    │      │      │      SecurityPolicy.php
+    │      │      │      SecurityPolicyInterface.php
+    │      │      │      
+    │      │      ├─Test
+    │      │      │      Function.php
+    │      │      │      IntegrationTestCase.php
+    │      │      │      Method.php
+    │      │      │      Node.php
+    │      │      │      NodeTestCase.php
+    │      │      │      
+    │      │      ├─TokenParser
+    │      │      │      AutoEscape.php
+    │      │      │      Block.php
+    │      │      │      Do.php
+    │      │      │      Embed.php
+    │      │      │      Extends.php
+    │      │      │      Filter.php
+    │      │      │      Flush.php
+    │      │      │      For.php
+    │      │      │      From.php
+    │      │      │      If.php
+    │      │      │      Import.php
+    │      │      │      Include.php
+    │      │      │      Macro.php
+    │      │      │      Sandbox.php
+    │      │      │      Set.php
+    │      │      │      Spaceless.php
+    │      │      │      Use.php
+    │      │      │      With.php
+    │      │      │      
+    │      │      └─Util
+    │      │              DeprecationCollector.php
+    │      │              TemplateDirIterator.php
+    │      │              
+    │      ├─src
+    │      │  │  Compiler.php
+    │      │  │  Environment.php
+    │      │  │  ExpressionParser.php
+    │      │  │  FileExtensionEscapingStrategy.php
+    │      │  │  Lexer.php
+    │      │  │  Markup.php
+    │      │  │  NodeTraverser.php
+    │      │  │  Parser.php
+    │      │  │  Source.php
+    │      │  │  Template.php
+    │      │  │  TemplateWrapper.php
+    │      │  │  Token.php
+    │      │  │  TokenStream.php
+    │      │  │  TwigFilter.php
+    │      │  │  TwigFunction.php
+    │      │  │  TwigTest.php
+    │      │  │  
+    │      │  ├─Cache
+    │      │  │      CacheInterface.php
+    │      │  │      FilesystemCache.php
+    │      │  │      NullCache.php
+    │      │  │      
+    │      │  ├─Error
+    │      │  │      Error.php
+    │      │  │      LoaderError.php
+    │      │  │      RuntimeError.php
+    │      │  │      SyntaxError.php
+    │      │  │      
+    │      │  ├─Extension
+    │      │  │      AbstractExtension.php
+    │      │  │      CoreExtension.php
+    │      │  │      DebugExtension.php
+    │      │  │      EscaperExtension.php
+    │      │  │      ExtensionInterface.php
+    │      │  │      GlobalsInterface.php
+    │      │  │      InitRuntimeInterface.php
+    │      │  │      OptimizerExtension.php
+    │      │  │      ProfilerExtension.php
+    │      │  │      RuntimeExtensionInterface.php
+    │      │  │      SandboxExtension.php
+    │      │  │      StagingExtension.php
+    │      │  │      StringLoaderExtension.php
+    │      │  │      
+    │      │  ├─Loader
+    │      │  │      ArrayLoader.php
+    │      │  │      ChainLoader.php
+    │      │  │      ExistsLoaderInterface.php
+    │      │  │      FilesystemLoader.php
+    │      │  │      LoaderInterface.php
+    │      │  │      SourceContextLoaderInterface.php
+    │      │  │      
+    │      │  ├─Node
+    │      │  │  │  AutoEscapeNode.php
+    │      │  │  │  BlockNode.php
+    │      │  │  │  BlockReferenceNode.php
+    │      │  │  │  BodyNode.php
+    │      │  │  │  CheckSecurityNode.php
+    │      │  │  │  DoNode.php
+    │      │  │  │  EmbedNode.php
+    │      │  │  │  FlushNode.php
+    │      │  │  │  ForLoopNode.php
+    │      │  │  │  ForNode.php
+    │      │  │  │  IfNode.php
+    │      │  │  │  ImportNode.php
+    │      │  │  │  IncludeNode.php
+    │      │  │  │  MacroNode.php
+    │      │  │  │  ModuleNode.php
+    │      │  │  │  Node.php
+    │      │  │  │  NodeCaptureInterface.php
+    │      │  │  │  NodeOutputInterface.php
+    │      │  │  │  PrintNode.php
+    │      │  │  │  SandboxedPrintNode.php
+    │      │  │  │  SandboxNode.php
+    │      │  │  │  SetNode.php
+    │      │  │  │  SetTempNode.php
+    │      │  │  │  SpacelessNode.php
+    │      │  │  │  TextNode.php
+    │      │  │  │  WithNode.php
+    │      │  │  │  
+    │      │  │  └─Expression
+    │      │  │      │  AbstractExpression.php
+    │      │  │      │  ArrayExpression.php
+    │      │  │      │  AssignNameExpression.php
+    │      │  │      │  BlockReferenceExpression.php
+    │      │  │      │  CallExpression.php
+    │      │  │      │  ConditionalExpression.php
+    │      │  │      │  ConstantExpression.php
+    │      │  │      │  FilterExpression.php
+    │      │  │      │  FunctionExpression.php
+    │      │  │      │  GetAttrExpression.php
+    │      │  │      │  MethodCallExpression.php
+    │      │  │      │  NameExpression.php
+    │      │  │      │  NullCoalesceExpression.php
+    │      │  │      │  ParentExpression.php
+    │      │  │      │  TempNameExpression.php
+    │      │  │      │  TestExpression.php
+    │      │  │      │  
+    │      │  │      ├─Binary
+    │      │  │      │      AbstractBinary.php
+    │      │  │      │      AddBinary.php
+    │      │  │      │      AndBinary.php
+    │      │  │      │      BitwiseAndBinary.php
+    │      │  │      │      BitwiseOrBinary.php
+    │      │  │      │      BitwiseXorBinary.php
+    │      │  │      │      ConcatBinary.php
+    │      │  │      │      DivBinary.php
+    │      │  │      │      EndsWithBinary.php
+    │      │  │      │      EqualBinary.php
+    │      │  │      │      FloorDivBinary.php
+    │      │  │      │      GreaterBinary.php
+    │      │  │      │      GreaterEqualBinary.php
+    │      │  │      │      InBinary.php
+    │      │  │      │      LessBinary.php
+    │      │  │      │      LessEqualBinary.php
+    │      │  │      │      MatchesBinary.php
+    │      │  │      │      ModBinary.php
+    │      │  │      │      MulBinary.php
+    │      │  │      │      NotEqualBinary.php
+    │      │  │      │      NotInBinary.php
+    │      │  │      │      OrBinary.php
+    │      │  │      │      PowerBinary.php
+    │      │  │      │      RangeBinary.php
+    │      │  │      │      StartsWithBinary.php
+    │      │  │      │      SubBinary.php
+    │      │  │      │      
+    │      │  │      ├─Filter
+    │      │  │      │      DefaultFilter.php
+    │      │  │      │      
+    │      │  │      ├─Test
+    │      │  │      │      ConstantTest.php
+    │      │  │      │      DefinedTest.php
+    │      │  │      │      DivisiblebyTest.php
+    │      │  │      │      EvenTest.php
+    │      │  │      │      NullTest.php
+    │      │  │      │      OddTest.php
+    │      │  │      │      SameasTest.php
+    │      │  │      │      
+    │      │  │      └─Unary
+    │      │  │              AbstractUnary.php
+    │      │  │              NegUnary.php
+    │      │  │              NotUnary.php
+    │      │  │              PosUnary.php
+    │      │  │              
+    │      │  ├─NodeVisitor
+    │      │  │      AbstractNodeVisitor.php
+    │      │  │      EscaperNodeVisitor.php
+    │      │  │      NodeVisitorInterface.php
+    │      │  │      OptimizerNodeVisitor.php
+    │      │  │      SafeAnalysisNodeVisitor.php
+    │      │  │      SandboxNodeVisitor.php
+    │      │  │      
+    │      │  ├─Profiler
+    │      │  │  │  Profile.php
+    │      │  │  │  
+    │      │  │  ├─Dumper
+    │      │  │  │      BaseDumper.php
+    │      │  │  │      BlackfireDumper.php
+    │      │  │  │      HtmlDumper.php
+    │      │  │  │      TextDumper.php
+    │      │  │  │      
+    │      │  │  ├─Node
+    │      │  │  │      EnterProfileNode.php
+    │      │  │  │      LeaveProfileNode.php
+    │      │  │  │      
+    │      │  │  └─NodeVisitor
+    │      │  │          ProfilerNodeVisitor.php
+    │      │  │          
+    │      │  ├─RuntimeLoader
+    │      │  │      ContainerRuntimeLoader.php
+    │      │  │      FactoryRuntimeLoader.php
+    │      │  │      RuntimeLoaderInterface.php
+    │      │  │      
+    │      │  ├─Sandbox
+    │      │  │      SecurityError.php
+    │      │  │      SecurityNotAllowedFilterError.php
+    │      │  │      SecurityNotAllowedFunctionError.php
+    │      │  │      SecurityNotAllowedMethodError.php
+    │      │  │      SecurityNotAllowedPropertyError.php
+    │      │  │      SecurityNotAllowedTagError.php
+    │      │  │      SecurityPolicy.php
+    │      │  │      SecurityPolicyInterface.php
+    │      │  │      
+    │      │  ├─Test
+    │      │  │      IntegrationTestCase.php
+    │      │  │      NodeTestCase.php
+    │      │  │      
+    │      │  ├─TokenParser
+    │      │  │      AbstractTokenParser.php
+    │      │  │      AutoEscapeTokenParser.php
+    │      │  │      BlockTokenParser.php
+    │      │  │      DoTokenParser.php
+    │      │  │      EmbedTokenParser.php
+    │      │  │      ExtendsTokenParser.php
+    │      │  │      FilterTokenParser.php
+    │      │  │      FlushTokenParser.php
+    │      │  │      ForTokenParser.php
+    │      │  │      FromTokenParser.php
+    │      │  │      IfTokenParser.php
+    │      │  │      ImportTokenParser.php
+    │      │  │      IncludeTokenParser.php
+    │      │  │      MacroTokenParser.php
+    │      │  │      SandboxTokenParser.php
+    │      │  │      SetTokenParser.php
+    │      │  │      SpacelessTokenParser.php
+    │      │  │      TokenParserInterface.php
+    │      │  │      UseTokenParser.php
+    │      │  │      WithTokenParser.php
+    │      │  │      
+    │      │  └─Util
+    │      │          DeprecationCollector.php
+    │      │          TemplateDirIterator.php
+    │      │          
+    │      └─test
+    │          └─Twig
+    │              └─Tests
+    │                  │  AutoloaderTest.php
+    │                  │  CompilerTest.php
+    │                  │  ContainerRuntimeLoaderTest.php
+    │                  │  CustomExtensionTest.php
+    │                  │  EnvironmentTest.php
+    │                  │  ErrorTest.php
+    │                  │  escapingTest.php
+    │                  │  ExpressionParserTest.php
+    │                  │  FactoryRuntimeLoaderTest.php
+    │                  │  FileCachingTest.php
+    │                  │  FileExtensionEscapingStrategyTest.php
+    │                  │  FilesystemHelper.php
+    │                  │  IntegrationTest.php
+    │                  │  LegacyIntegrationTest.php
+    │                  │  LexerTest.php
+    │                  │  NativeExtensionTest.php
+    │                  │  ParserTest.php
+    │                  │  TemplateTest.php
+    │                  │  TemplateWrapperTest.php
+    │                  │  TokenStreamTest.php
+    │                  │  
+    │                  ├─Cache
+    │                  │      FilesystemTest.php
+    │                  │      
+    │                  ├─Extension
+    │                  │      CoreTest.php
+    │                  │      SandboxTest.php
+    │                  │      
+    │                  ├─Fixtures
+    │                  │  ├─autoescape
+    │                  │  │      block.test
+    │                  │  │      name.test
+    │                  │  │      
+    │                  │  ├─errors
+    │                  │  │      base.html
+    │                  │  │      index.html
+    │                  │  │      
+    │                  │  ├─exceptions
+    │                  │  │      child_contents_outside_blocks.test
+    │                  │  │      multiline_array_with_undefined_variable.test
+    │                  │  │      multiline_array_with_undefined_variable_again.test
+    │                  │  │      multiline_function_with_undefined_variable.test
+    │                  │  │      multiline_function_with_unknown_argument.test
+    │                  │  │      multiline_tag_with_undefined_variable.test
+    │                  │  │      syntax_error_in_reused_template.test
+    │                  │  │      unclosed_tag.test
+    │                  │  │      undefined_parent.test
+    │                  │  │      undefined_template_in_child_template.test
+    │                  │  │      undefined_trait.test
+    │                  │  │      
+    │                  │  ├─expressions
+    │                  │  │      array.test
+    │                  │  │      array_call.test
+    │                  │  │      binary.test
+    │                  │  │      bitwise.test
+    │                  │  │      comparison.test
+    │                  │  │      divisibleby.test
+    │                  │  │      dotdot.test
+    │                  │  │      ends_with.test
+    │                  │  │      grouping.test
+    │                  │  │      literals.test
+    │                  │  │      magic_call.test
+    │                  │  │      matches.test
+    │                  │  │      method_call.test
+    │                  │  │      negative_numbers.test
+    │                  │  │      operators_as_variables.test
+    │                  │  │      postfix.test
+    │                  │  │      power.test
+    │                  │  │      sameas.test
+    │                  │  │      starts_with.test
+    │                  │  │      strings.test
+    │                  │  │      ternary_operator.test
+    │                  │  │      ternary_operator_noelse.test
+    │                  │  │      ternary_operator_nothen.test
+    │                  │  │      two_word_operators_as_variables.test
+    │                  │  │      unary.test
+    │                  │  │      unary_macro_arguments.test
+    │                  │  │      unary_precedence.test
+    │                  │  │      _self.test
+    │                  │  │      
+    │                  │  ├─filters
+    │                  │  │      abs.test
+    │                  │  │      batch.test
+    │                  │  │      batch_float.test
+    │                  │  │      batch_with_empty_fill.test
+    │                  │  │      batch_with_exact_elements.test
+    │                  │  │      batch_with_fill.test
+    │                  │  │      batch_with_keys.test
+    │                  │  │      batch_with_zero_elements.test
+    │                  │  │      convert_encoding.test
+    │                  │  │      date.test
+    │                  │  │      date_default_format.test
+    │                  │  │      date_default_format_interval.test
+    │                  │  │      date_immutable.test
+    │                  │  │      date_interval.test
+    │                  │  │      date_modify.test
+    │                  │  │      date_namedargs.test
+    │                  │  │      default.test
+    │                  │  │      dynamic_filter.test
+    │                  │  │      escape.test
+    │                  │  │      escape_html_attr.test
+    │                  │  │      escape_javascript.test
+    │                  │  │      escape_non_supported_charset.test
+    │                  │  │      first.test
+    │                  │  │      force_escape.test
+    │                  │  │      format.test
+    │                  │  │      join.test
+    │                  │  │      json_encode.test
+    │                  │  │      last.test
+    │                  │  │      length.test
+    │                  │  │      length_utf8.test
+    │                  │  │      merge.test
+    │                  │  │      nl2br.test
+    │                  │  │      number_format.test
+    │                  │  │      number_format_default.test
+    │                  │  │      replace.test
+    │                  │  │      replace_invalid_arg.test
+    │                  │  │      reverse.test
+    │                  │  │      round.test
+    │                  │  │      slice.test
+    │                  │  │      sort.test
+    │                  │  │      special_chars.test
+    │                  │  │      split.test
+    │                  │  │      split_utf8.test
+    │                  │  │      static_calls.test
+    │                  │  │      trim.test
+    │                  │  │      urlencode.test
+    │                  │  │      urlencode_deprecated.test
+    │                  │  │      
+    │                  │  ├─functions
+    │                  │  │  │  attribute.test
+    │                  │  │  │  block.test
+    │                  │  │  │  block_without_name.test
+    │                  │  │  │  block_with_template.test
+    │                  │  │  │  constant.test
+    │                  │  │  │  cycle.test
+    │                  │  │  │  date.test
+    │                  │  │  │  date_namedargs.test
+    │                  │  │  │  dump.test
+    │                  │  │  │  dump_array.test
+    │                  │  │  │  dynamic_function.test
+    │                  │  │  │  magic_call.test
+    │                  │  │  │  magic_call53.test
+    │                  │  │  │  max.test
+    │                  │  │  │  min.test
+    │                  │  │  │  range.test
+    │                  │  │  │  recursive_block_with_inheritance.test
+    │                  │  │  │  source.test
+    │                  │  │  │  special_chars.test
+    │                  │  │  │  static_calls.test
+    │                  │  │  │  template_from_string.test
+    │                  │  │  │  
+    │                  │  │  └─include
+    │                  │  │          assignment.test
+    │                  │  │          autoescaping.test
+    │                  │  │          basic.test
+    │                  │  │          expression.test
+    │                  │  │          ignore_missing.test
+    │                  │  │          missing.test
+    │                  │  │          missing_nested.test
+    │                  │  │          sandbox.test
+    │                  │  │          sandbox_disabling.test
+    │                  │  │          sandbox_disabling_ignore_missing.test
+    │                  │  │          templates_as_array.test
+    │                  │  │          template_instance.test
+    │                  │  │          with_context.test
+    │                  │  │          with_variables.test
+    │                  │  │          
+    │                  │  ├─macros
+    │                  │  │      default_values.test
+    │                  │  │      nested_calls.test
+    │                  │  │      reserved_variables.test
+    │                  │  │      simple.test
+    │                  │  │      varargs.test
+    │                  │  │      varargs_argument.test
+    │                  │  │      with_filters.test
+    │                  │  │      
+    │                  │  ├─regression
+    │                  │  │      combined_debug_info.test
+    │                  │  │      empty_token.test
+    │                  │  │      issue_1143.test
+    │                  │  │      multi_word_tests.test
+    │                  │  │      simple_xml_element.test
+    │                  │  │      strings_like_numbers.test
+    │                  │  │      
+    │                  │  ├─tags
+    │                  │  │  │  from.test
+    │                  │  │  │  special_chars.test
+    │                  │  │  │  trim_block.test
+    │                  │  │  │  
+    │                  │  │  ├─autoescape
+    │                  │  │  │      basic.test
+    │                  │  │  │      blocks.test
+    │                  │  │  │      double_escaping.test
+    │                  │  │  │      functions.test
+    │                  │  │  │      literal.test
+    │                  │  │  │      nested.test
+    │                  │  │  │      objects.test
+    │                  │  │  │      raw.test
+    │                  │  │  │      strategy.legacy.test
+    │                  │  │  │      strategy.test
+    │                  │  │  │      type.test
+    │                  │  │  │      with_filters.test
+    │                  │  │  │      with_filters_arguments.test
+    │                  │  │  │      with_preserves_safety_filters.test
+    │                  │  │  │      with_pre_escape_filters.test
+    │                  │  │  │      
+    │                  │  │  ├─block
+    │                  │  │  │      basic.test
+    │                  │  │  │      block_unique_name.test
+    │                  │  │  │      special_chars.test
+    │                  │  │  │      
+    │                  │  │  ├─embed
+    │                  │  │  │      basic.test
+    │                  │  │  │      complex_dynamic_parent.test
+    │                  │  │  │      dynamic_parent.test
+    │                  │  │  │      error_line.test
+    │                  │  │  │      multiple.test
+    │                  │  │  │      nested.test
+    │                  │  │  │      with_extends.test
+    │                  │  │  │      
+    │                  │  │  ├─filter
+    │                  │  │  │      basic.test
+    │                  │  │  │      json_encode.test
+    │                  │  │  │      multiple.test
+    │                  │  │  │      nested.test
+    │                  │  │  │      with_for_tag.test
+    │                  │  │  │      with_if_tag.test
+    │                  │  │  │      
+    │                  │  │  ├─for
+    │                  │  │  │      condition.test
+    │                  │  │  │      context.test
+    │                  │  │  │      else.test
+    │                  │  │  │      inner_variables.test
+    │                  │  │  │      keys.test
+    │                  │  │  │      keys_and_values.test
+    │                  │  │  │      loop_context.test
+    │                  │  │  │      loop_context_local.test
+    │                  │  │  │      loop_not_defined.test
+    │                  │  │  │      loop_not_defined_cond.test
+    │                  │  │  │      nested_else.test
+    │                  │  │  │      objects.test
+    │                  │  │  │      objects_countable.test
+    │                  │  │  │      recursive.test
+    │                  │  │  │      values.test
+    │                  │  │  │      
+    │                  │  │  ├─if
+    │                  │  │  │      basic.test
+    │                  │  │  │      expression.test
+    │                  │  │  │      
+    │                  │  │  ├─include
+    │                  │  │  │      basic.test
+    │                  │  │  │      expression.test
+    │                  │  │  │      ignore_missing.test
+    │                  │  │  │      missing.test
+    │                  │  │  │      missing_nested.test
+    │                  │  │  │      only.test
+    │                  │  │  │      templates_as_array.test
+    │                  │  │  │      template_instance.test
+    │                  │  │  │      with_variables.test
+    │                  │  │  │      
+    │                  │  │  ├─inheritance
+    │                  │  │  │      basic.test
+    │                  │  │  │      block_expr.test
+    │                  │  │  │      block_expr2.test
+    │                  │  │  │      conditional.test
+    │                  │  │  │      dynamic.test
+    │                  │  │  │      empty.test
+    │                  │  │  │      extends_as_array.test
+    │                  │  │  │      extends_as_array_with_empty_name.test
+    │                  │  │  │      extends_as_array_with_null_name.test
+    │                  │  │  │      multiple.test
+    │                  │  │  │      multiple_dynamic.test
+    │                  │  │  │      nested_blocks.test
+    │                  │  │  │      nested_blocks_parent_only.test
+    │                  │  │  │      nested_inheritance.test
+    │                  │  │  │      parent.test
+    │                  │  │  │      parent_change.test
+    │                  │  │  │      parent_in_a_block.test
+    │                  │  │  │      parent_isolation.test
+    │                  │  │  │      parent_nested.test
+    │                  │  │  │      parent_without_extends.test
+    │                  │  │  │      parent_without_extends_but_traits.test
+    │                  │  │  │      template_instance.test
+    │                  │  │  │      use.test
+    │                  │  │  │      
+    │                  │  │  ├─macro
+    │                  │  │  │      basic.test
+    │                  │  │  │      endmacro_name.test
+    │                  │  │  │      external.test
+    │                  │  │  │      from.test
+    │                  │  │  │      from_with_reserved_name.test
+    │                  │  │  │      global.test
+    │                  │  │  │      import_with_reserved_nam.test
+    │                  │  │  │      reserved_name.test
+    │                  │  │  │      self_import.test
+    │                  │  │  │      special_chars.test
+    │                  │  │  │      super_globals.test
+    │                  │  │  │      
+    │                  │  │  ├─raw
+    │                  │  │  │      basic.legacy.test
+    │                  │  │  │      mixed_usage_with_raw.legacy.test
+    │                  │  │  │      whitespace_control.legacy.test
+    │                  │  │  │      
+    │                  │  │  ├─sandbox
+    │                  │  │  │      not_valid1.test
+    │                  │  │  │      not_valid2.test
+    │                  │  │  │      simple.test
+    │                  │  │  │      
+    │                  │  │  ├─set
+    │                  │  │  │      basic.test
+    │                  │  │  │      capture-empty.test
+    │                  │  │  │      capture.test
+    │                  │  │  │      expression.test
+    │                  │  │  │      
+    │                  │  │  ├─spaceless
+    │                  │  │  │      simple.test
+    │                  │  │  │      
+    │                  │  │  ├─use
+    │                  │  │  │      aliases.test
+    │                  │  │  │      basic.test
+    │                  │  │  │      deep.test
+    │                  │  │  │      deep_empty.test
+    │                  │  │  │      inheritance.test
+    │                  │  │  │      inheritance2.test
+    │                  │  │  │      multiple.test
+    │                  │  │  │      multiple_aliases.test
+    │                  │  │  │      parent_block.test
+    │                  │  │  │      parent_block2.test
+    │                  │  │  │      parent_block3.test
+    │                  │  │  │      use_with_parent.test
+    │                  │  │  │      
+    │                  │  │  ├─verbatim
+    │                  │  │  │      basic.test
+    │                  │  │  │      mixed_usage_with_raw.test
+    │                  │  │  │      whitespace_control.test
+    │                  │  │  │      
+    │                  │  │  └─with
+    │                  │  │          basic.test
+    │                  │  │          expression.test
+    │                  │  │          nested.test
+    │                  │  │          with_no_hash.test
+    │                  │  │          with_only.test
+    │                  │  │          
+    │                  │  └─tests
+    │                  │          array.test
+    │                  │          constant.test
+    │                  │          defined.test
+    │                  │          defined_for_attribute.test
+    │                  │          defined_for_blocks.test
+    │                  │          defined_for_blocks_with_template.test
+    │                  │          defined_for_constants.test
+    │                  │          empty.test
+    │                  │          even.test
+    │                  │          in.test
+    │                  │          in_with_objects.test
+    │                  │          iterable.test
+    │                  │          null_coalesce.test
+    │                  │          odd.test
+    │                  │          
+    │                  ├─LegacyFixtures
+    │                  │  │  test.legacy.test
+    │                  │  │  
+    │                  │  ├─autoescape
+    │                  │  │      filename.legacy.test
+    │                  │  │      
+    │                  │  └─functions
+    │                  │          undefined_block.legacy.test
+    │                  │          
+    │                  ├─Loader
+    │                  │  │  ArrayTest.php
+    │                  │  │  ChainTest.php
+    │                  │  │  FilesystemTest.php
+    │                  │  │  
+    │                  │  └─Fixtures
+    │                  │      ├─inheritance
+    │                  │      │      array_inheritance_empty_parent.html.twig
+    │                  │      │      array_inheritance_nonexistent_parent.html.twig
+    │                  │      │      array_inheritance_null_parent.html.twig
+    │                  │      │      array_inheritance_valid_parent.html.twig
+    │                  │      │      parent.html.twig
+    │                  │      │      spare_parent.html.twig
+    │                  │      │      
+    │                  │      ├─named
+    │                  │      │      index.html
+    │                  │      │      
+    │                  │      ├─named_bis
+    │                  │      │      index.html
+    │                  │      │      
+    │                  │      ├─named_final
+    │                  │      │      index.html
+    │                  │      │      
+    │                  │      ├─named_quater
+    │                  │      │      named_absolute.html
+    │                  │      │      
+    │                  │      ├─named_ter
+    │                  │      │      index.html
+    │                  │      │      
+    │                  │      ├─normal
+    │                  │      │      index.html
+    │                  │      │      
+    │                  │      ├─normal_bis
+    │                  │      │      index.html
+    │                  │      │      
+    │                  │      ├─normal_final
+    │                  │      │      index.html
+    │                  │      │      
+    │                  │      ├─normal_ter
+    │                  │      │      index.html
+    │                  │      │      
+    │                  │      ├─phar
+    │                  │      │      phar-sample.phar
+    │                  │      │      
+    │                  │      └─themes
+    │                  │          ├─theme1
+    │                  │          │      blocks.html.twig
+    │                  │          │      
+    │                  │          └─theme2
+    │                  │                  blocks.html.twig
+    │                  │                  
+    │                  ├─Node
+    │                  │  │  AutoEscapeTest.php
+    │                  │  │  BlockReferenceTest.php
+    │                  │  │  BlockTest.php
+    │                  │  │  DoTest.php
+    │                  │  │  ForTest.php
+    │                  │  │  IfTest.php
+    │                  │  │  ImportTest.php
+    │                  │  │  IncludeTest.php
+    │                  │  │  MacroTest.php
+    │                  │  │  ModuleTest.php
+    │                  │  │  PrintTest.php
+    │                  │  │  SandboxedPrintTest.php
+    │                  │  │  SandboxTest.php
+    │                  │  │  SetTest.php
+    │                  │  │  SpacelessTest.php
+    │                  │  │  TextTest.php
+    │                  │  │  
+    │                  │  └─Expression
+    │                  │      │  ArrayTest.php
+    │                  │      │  AssignNameTest.php
+    │                  │      │  CallTest.php
+    │                  │      │  ConditionalTest.php
+    │                  │      │  ConstantTest.php
+    │                  │      │  FilterTest.php
+    │                  │      │  FunctionTest.php
+    │                  │      │  GetAttrTest.php
+    │                  │      │  NameTest.php
+    │                  │      │  NullCoalesceTest.php
+    │                  │      │  ParentTest.php
+    │                  │      │  TestTest.php
+    │                  │      │  
+    │                  │      ├─Binary
+    │                  │      │      AddTest.php
+    │                  │      │      AndTest.php
+    │                  │      │      ConcatTest.php
+    │                  │      │      DivTest.php
+    │                  │      │      FloorDivTest.php
+    │                  │      │      ModTest.php
+    │                  │      │      MulTest.php
+    │                  │      │      OrTest.php
+    │                  │      │      SubTest.php
+    │                  │      │      
+    │                  │      ├─PHP53
+    │                  │      │      FilterInclude.php
+    │                  │      │      FunctionInclude.php
+    │                  │      │      TestInclude.php
+    │                  │      │      
+    │                  │      └─Unary
+    │                  │              NegTest.php
+    │                  │              NotTest.php
+    │                  │              PosTest.php
+    │                  │              
+    │                  ├─NodeVisitor
+    │                  │      OptimizerTest.php
+    │                  │      
+    │                  ├─Profiler
+    │                  │  │  ProfileTest.php
+    │                  │  │  
+    │                  │  └─Dumper
+    │                  │          AbstractTest.php
+    │                  │          BlackfireTest.php
+    │                  │          HtmlTest.php
+    │                  │          TextTest.php
+    │                  │          
+    │                  └─Util
+    │                          DeprecationCollectorTest.php
+    │                          
+    └─wixel
+        └─gump
+            │  .gitignore
+            │  .travis.yml
+            │  composer.json
+            │  gump.class.php
+            │  LICENSE
+            │  README.md
+            │  tests.php
+            │  
+            ├─examples
+            │      basic_tags.php
+            │      contains.php
+            │      credit_card.php
+            │      custom_validator.php
+            │      escaping_mysql_strings.php
+            │      explicit_fields.php
+            │      files.php
+            │      full_example.php
+            │      guid.php
+            │      handling_errors.php
+            │      match.php
+            │      noise_words.php
+            │      sanitize_string.php
+            │      sanitize_whitelist.php
+            │      street_address.php
+            │      url_exists.php
+            │      utf-8.php
+            │      
+            └─lang
+                    en.php
+                    es.php
+                    fr.php
+                    he.php
+                    pt-br.php
+                    ru.php
+                    

@@ -16,21 +16,136 @@ A PHP Framework for my cat
 
 终于支持多模块了，但是实现还是很LOW，访问路径不够灵活
 
+今天更新了比较多的东东，常量全部做了修改，模块化总算是很LOW的实现了，路由目前支持
+两种形式、一种是PATH_INFO模式（自动匹配） 一种是（自定义路由,需要手工配置）
+
 ## 前言
 此框架为个人项目，为什么要叫DollarPHP呢？因为我的喵叫 $ 。
 写这个框架纯粹是为了学习，有兴趣一起学习或者有任何建议吐槽的可以联系我
 > QQ:543577508 橙橙同学
+
+
+## 框架结构
+
+│ cat.jpg
+│  composer.json
+│  composer.lock
+│  composer.phar
+│  index.php
+│  list.txt
+│  README.md
+├─app           //应用程序目录
+│  │  router.php 
+│  ├─admin
+│  └─home       //模块目录
+│      ├─config //模块配置
+│      │      config.php
+│      │      db.php
+│      │      router.php
+│      │      
+│      ├─controller //控制器
+│      │      index.php
+│      │      test.php
+│      │      
+│      ├─model  //模型
+│      │      dollarModel.php
+│      │      
+│      ├─plugin //插件
+│      │      ClickPlugin.php
+│      │      ZanPlugin.php
+│      │      
+│      ├─validate //验证器
+│      └─views  //视图
+│          ├─index
+│          │      forms.html
+│          │      index.html
+│          │      layout.html
+│          │      
+│          └─test
+│                  index.html
+│                  
+├─cache //缓存
+├─dollarphp //框架核心
+│  │  dollar.php
+│  │  init.php
+│  │  
+│  ├─common
+│  │      function.php
+│  │      
+│  ├─config
+│  │      db.php
+│  │      Di.php
+│  │      log.php
+│  │      route.php
+│  │      router.php
+│  │      
+│  ├─DI
+│  │      config.php
+│  │      Di.php
+│  │      DiService.php
+│  │      
+│  ├─helper
+│  │      Config.php
+│  │      Log.php
+│  │      MarkDown.php
+│  │      
+│  └─lib
+│      │  conf.php
+│      │  Config.php
+│      │  Controller.php
+│      │  Database.php
+│      │  Factory.php
+│      │  LoadPlugin.php
+│      │  model.php
+│      │  model_pdo.php
+│      │  MonoLog.php
+│      │  Orm.php
+│      │  route.php
+│      │  Router.php
+│      │  
+│      ├─Databases
+│      │      MySQL.php
+│      │      MySQLi.php
+│      │      PDO.php
+│      │      
+│      ├─drive
+│      │  └─log
+│      │          file.php
+│      │          Mysql.php
+│      │          
+│      ├─interfaces
+│      │      ILog.php
+│      │      
+│      ├─Log
+│      │      file.php
+│      │      
+│      └─Plugin
+│              ClickPlugin.php
+│              IPlugin.php
+│              NewsDetail.php
+│              PluginGenerator.php
+│              
+├─logs      //日志
+├─public    //静态资源
+└─vendor    //compser等第三方库
+  
 
 ## 使用方法：
 git clone https://github.com/521daichen/DollarPHP
 
 php composer.phar install
 
-## 路由配置：
-此项目使用第三方路由组件`FastRoute`
+## 路由：
+
+路由分两种模式：PATH_INFO（xx/xx/xx 模块/控制器/方法） 自定义路由（基于FastRoute）
+
+### 路由配置
+
+PATHINFO ：\dollarphp\config\route.php 配置默认控制器和方法
+自定义路由：模块目录下的config\router.php
+
 文档：
 https://github.com/nikic/FastRoute
-
 请在`index.php`下`define('ROUTE_CONFIG',true);`打开路由配置模式
 配置文件：`\dollarphp\config\router.php`
 配置语法：上述文档所述。
