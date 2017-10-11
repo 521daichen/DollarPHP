@@ -36,7 +36,7 @@ define('DOLLARPHP',DOLLAR.'/dollarphp/');
 //模块配置目录
 define('MODULE_CONFIG',MODULE.'/config/');
 //配置路由
-define('ROUTE_CONFIG',true);
+define('ROUTE_CONFIG',false);
 //调试模式
 define('DEBUG',true);
 //插件模式

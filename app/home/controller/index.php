@@ -21,7 +21,7 @@ use Symfony\Component\HttpFoundation\Request;
 
 class index extends Controller {
 
-    public function index($id)
+    public function index()
     {
 
         $model = new dollarModel();

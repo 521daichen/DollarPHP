@@ -18,8 +18,14 @@ class  Router{
         $route = new \dollarphp\lib\route();
         $controller = $route->controller;
         $action = $route->action;
+
+        $module = $route->module;
+
 //        $ctrlfile = APP.'/controller/'.$controller.'.php';
-        $ctrlClass = '\\'.MODULE.'\controller\\'.$controller;
+        $ctrlClass = APP.'\\'.$module.'\\controller\\'.$controller;
+
+
+
         $c = new $ctrlClass();
         $c->$action();
 
