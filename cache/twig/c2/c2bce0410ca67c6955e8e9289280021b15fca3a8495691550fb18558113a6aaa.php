@@ -1,7 +1,7 @@
 <?php
 
 /* layout.html */
-class __TwigTemplate_34f05b48b39cd008a3605dce7e6162ad22fc597c6f8ecbcbee0550fe47229e0f extends Twig_Template
+class __TwigTemplate_b4d28f07897aec7f3b7c8f9d37e5fc6780b7759fde1fa756db640b8d14ef1ef6 extends Twig_Template
 {
     public function __construct(Twig_Environment $env)
     {
@@ -48,13 +48,13 @@ class __TwigTemplate_34f05b48b39cd008a3605dce7e6162ad22fc597c6f8ecbcbee0550fe472
 <body>
 
 
-
-
 ";
-        // line 22
+        // line 20
         $this->displayBlock('head', $context, $blocks);
-        // line 25
-        echo "<div class=\"site-wrapper\">
+        // line 22
+        echo "
+
+<div class=\"site-wrapper\">
     <div class=\"site-wrapper-inner\">
 
         <div class=\"cover-container\">
@@ -95,12 +95,9 @@ class __TwigTemplate_34f05b48b39cd008a3605dce7e6162ad22fc597c6f8ecbcbee0550fe472
 </html>";
     }
 
-    // line 22
+    // line 20
     public function block_head($context, array $blocks = array())
     {
-        // line 23
-        echo "ss
-";
     }
 
     public function getTemplateName()
@@ -115,7 +112,7 @@ class __TwigTemplate_34f05b48b39cd008a3605dce7e6162ad22fc597c6f8ecbcbee0550fe472
 
     public function getDebugInfo()
     {
-        return array (  102 => 23,  99 => 22,  57 => 25,  55 => 22,  43 => 13,  38 => 11,  33 => 9,  28 => 7,  20 => 1,);
+        return array (  99 => 20,  55 => 22,  53 => 20,  43 => 13,  38 => 11,  33 => 9,  28 => 7,  20 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -147,11 +144,10 @@ class __TwigTemplate_34f05b48b39cd008a3605dce7e6162ad22fc597c6f8ecbcbee0550fe472
 <body>
 
 
-
-
-{% block head %}
-ss
+{% block head%}
 {% endblock %}
+
+
 <div class=\"site-wrapper\">
     <div class=\"site-wrapper-inner\">
 
@@ -190,6 +186,6 @@ ss
 </div>
 
 </body>
-</html>", "layout.html", "D:\\Dollar\\DollarPHP\\app\\home\\views\\layout.html");
+</html>", "layout.html", "D:\\Dollar\\DollarPHP\\app\\home\\views\\index\\layout.html");
     }
 }
