@@ -22,11 +22,13 @@ class  Router{
         $action = $route->action;
         $module = $route->module;
 
+        if(!$module){
+            throw new \ErrorException('没有找到此模块，模块都删！要上天啊！');
+        }
+
 //        $ctrlfile = APP.'/controller/'.$controller.'.php';
         $ctrlClass = APP.'\\'.$module.'\\controller\\'.$controller;
 
-        var_export($ctrlClass);
-        exit();
 
         try{
             if(!class_exists($ctrlClass)){
