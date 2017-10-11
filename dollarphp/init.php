@@ -9,12 +9,14 @@
 date_default_timezone_set("PRC");
 header('Content-type:text/html;charset=utf8');
 
+
+include "vendor/autoload.php";
 /**
  * 为了分模块管理
  */
 $request_url = explode('/',substr($_SERVER['REQUEST_URI'],1));
 if(empty($request_url[0])){
-    echo '没有模块诶！请先创建模块 或者检查下URL路径是不是没有写模块哇';
+   echo "<img style='width: 200px' src='/cat.jpg'></img><div style='color: red'>模块都没有,要玩鸡毛</div>";
     exit();
 }
 
@@ -25,10 +27,7 @@ define('DOLLAR',realpath('./'));
 define('BASEDIR',__DIR__);
 //项目
 define('APP','app');
-
-
 define('MODULE_NAME',$request_url[0]);
-
 //模块目录
 define('MODULE',APP.'/'.$request_url[0]);
 //框架核心
@@ -48,7 +47,7 @@ define('__STATIC__','/public/'.basename(MODULE_NAME));
 //项目目录
 //define('APP',DOLLAR.'/'.MODULE);
 
-include "vendor/autoload.php";
+
 if(DEBUG){
     $whoops = new \Whoops\Run;
     $whoops->pushHandler(new \Whoops\Handler\PrettyPageHandler);
