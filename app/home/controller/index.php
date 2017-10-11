@@ -11,6 +11,7 @@ use app\home\model\dollarModel;
 
 use app\validate\IndexValidate;
 use dollarphp\dollar;
+use dollarphp\helper\Cache;
 use dollarphp\lib\Controller;
 use dollarphp\lib\Log\file;
 use dollarphp\lib\model;
@@ -21,8 +22,12 @@ use Symfony\Component\HttpFoundation\Request;
 
 class index extends Controller {
 
-    function test(){
-        echo 1;
+    function test()
+    {
+        Cache::put('test', 'dollarphp');
+        Cache::put('arr',['q','w','e']);
+        echo Cache::get('test');
+        var_export(Cache::get('arr'));
     }
     public function index()
     {

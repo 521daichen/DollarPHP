@@ -14,8 +14,9 @@ class Di implements \ArrayAccess{
     //获取服务
     public function get($name,$params=array()){
         //先从已经实例化的列表中查找
-        if(isset($this->_instances[$name])){
 
+
+        if(isset($this->_instances[$name])){
             return $this->_instances[$name];
         }
         //检测有没有注册该服务
@@ -34,6 +35,8 @@ class Di implements \ArrayAccess{
             $obj = call_user_func_array($concrete,$params);
         }elseif(is_string($concrete)){//字符串方式
             if(empty($params)){
+
+
                 $obj = new $concrete;
 
             }else{

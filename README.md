@@ -19,6 +19,7 @@ A PHP Framework for my cat
 今天更新了比较多的东东，常量全部做了修改，模块化总算是很LOW的实现了，路由目前支持
 两种形式、一种是PATH_INFO模式（自动匹配） 一种是（自定义路由,需要手工配置）
 
+增加缓存处理 使用助手类无需实例化对象，超简单调用。
 ## 前言
 此框架为个人项目，为什么要叫DollarPHP呢？因为我的喵叫 $ 。
 写这个框架纯粹是为了学习，有兴趣一起学习或者有任何建议吐槽的可以联系我
@@ -202,6 +203,15 @@ Config::get('name');
 Log::log('error','sdsd');
 
 ```
+
+## 缓存
+```php
+Cache::put('test', 'dollarphp');
+Cache::put('arr',['q','w','e']);
+echo Cache::get('test');
+var_export(Cache::get('arr'));
+```
+
 
 ## MarkDown
 ```php

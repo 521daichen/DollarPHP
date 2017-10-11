@@ -11,4 +11,5 @@ return array(
     'log'=>'\dollarphp\lib\Log\file',
     'config'=>'\dollarphp\lib\Config',
     'markdown'=>'\Parsedown',
+    'cache'=>'\dollarphp\lib\Cache',
 );
