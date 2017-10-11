@@ -22,14 +22,13 @@ class  Router{
         $action = $route->action;
         $module = $route->module;
 
+
         if(!$module){
             throw new \ErrorException('没有找到此模块，模块都删！要上天啊！');
         }
 
 //        $ctrlfile = APP.'/controller/'.$controller.'.php';
         $ctrlClass = APP.'\\'.$module.'\\controller\\'.$controller;
-
-
         try{
             if(!class_exists($ctrlClass)){
                 throw new \ErrorException('没有找到此控制器，请检查请求格式或检查应用目录下是否有响应程序文件');
