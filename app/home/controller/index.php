@@ -7,6 +7,8 @@
  */
 namespace app\home\controller;
 
+use app\home\model\dollarModel;
+
 use app\validate\IndexValidate;
 use dollarphp\dollar;
 use dollarphp\lib\Controller;
@@ -21,6 +23,10 @@ class index extends Controller {
 
     public function index($id)
     {
+
+
+        $model = new dollarModel();
+        dump($model);
 
         $this->assign('daichen','sss');
         $this->display('test/index');

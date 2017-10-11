@@ -5,7 +5,7 @@
  * Date: 2017/10/4
  * Time: 22:50
  */
-namespace app\model;
+namespace app\home\model;
 
 use dollarphp\lib\model;
 
