@@ -26,8 +26,8 @@ A PHP Framework for my cat
 
 
 ## 框架结构
-
-│ cat.jpg
+```
+│  cat.jpg
 │  composer.json
 │  composer.lock
 │  composer.phar
@@ -128,7 +128,7 @@ A PHP Framework for my cat
 ├─logs      //日志
 ├─public    //静态资源
 └─vendor    //compser等第三方库
-  
+```
 
 ## 使用方法：
 git clone https://github.com/521daichen/DollarPHP
