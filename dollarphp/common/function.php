@@ -5,3 +5,8 @@
  * Date: 2017/10/4
  * Time: 14:50
  */
+
+
+function Err(){
+
+}

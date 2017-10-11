@@ -21,6 +21,9 @@ use Symfony\Component\HttpFoundation\Request;
 
 class index extends Controller {
 
+    function test(){
+        echo 1;
+    }
     public function index()
     {
 

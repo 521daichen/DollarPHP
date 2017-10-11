@@ -24,7 +24,6 @@ class dollar{
     static public function run(){
 //        \dollarphp\lib\log::init();
 //        \dollarphp\lib\log::log('test');
-
         $router = new \dollarphp\lib\Router();
         if(ROUTE_CONFIG){
             //如果开启路由配置模式 使用fast_router

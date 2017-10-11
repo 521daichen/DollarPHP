@@ -8,6 +8,8 @@
 
 namespace dollarphp\lib;
 
+use Whoops\Exception\ErrorException;
+
 class  Router{
 
     /**
@@ -18,17 +20,31 @@ class  Router{
         $route = new \dollarphp\lib\route();
         $controller = $route->controller;
         $action = $route->action;
-
         $module = $route->module;
 
 //        $ctrlfile = APP.'/controller/'.$controller.'.php';
         $ctrlClass = APP.'\\'.$module.'\\controller\\'.$controller;
 
+        try{
+            if(!class_exists($ctrlClass)){
+                throw new \ErrorException('没有找到此控制器，请检查请求格式或检查应用目录下是否有响应程序文件');
+            }else{
+                $c = new $ctrlClass();
+            }
+        }catch (ErrorException $e){
 
+            var_export($e);
+        }
 
-        $c = new $ctrlClass();
-        $c->$action();
+        try {
+            if(!method_exists($c,$action)){
+                throw new \ErrorException('没有找到此方法，请检查请求格式或检查应用目录下是否有响应程序文件');
+            }else{
+                $c->$action();
+            }
+        }catch (ErrorException $e){
 
+        }
 //        if(is_file($ctrlfile)){
 //            include $ctrlfile;
 //            $c = new $ctrlClass();
