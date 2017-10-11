@@ -25,7 +25,7 @@ class Controller {
         $methodName = substr($view,$point);
 
 
-        $loader = new \Twig_Loader_Filesystem(APP.'/views/'.$controllerDir);
+        $loader = new \Twig_Loader_Filesystem(MODULE.'/views/'.$controllerDir);
         $twig = new \Twig_Environment($loader, array(
             'debug'=>DEBUG,
             'cache' => DOLLAR.'/cache/twig',

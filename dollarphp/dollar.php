@@ -27,8 +27,10 @@ class dollar{
 
         $router = new \dollarphp\lib\Router();
         if(ROUTE_CONFIG){
+            //如果开启路由配置模式 使用fast_router
             $router->run();
         } else{
+            //没有就 /index/index/index 模块/控制器/方法
             $router->autoMatch();
         }
     }

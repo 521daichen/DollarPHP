@@ -23,14 +23,11 @@ class index extends Controller {
 
     public function index($id)
     {
-        $model = new dollarModel();
 
+        $model = new dollarModel();
         $this->assign('daichen','sss');
         $this->display('index/index');
         exit();
-
-
-
 
         global $dollarApp;
 //      $orm = new \dollarphp\lib\Orm();

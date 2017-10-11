@@ -27,13 +27,13 @@ class __TwigTemplate_5b0ffa9ef4d30a52baefe506ec4cb374a516652c2533c3aea029e5c1dff
         $this->parent->display($context, array_merge($this->blocks, $blocks));
     }
 
-    // line 6
+    // line 4
     public function block_head($context, array $blocks = array())
     {
-        // line 7
+        // line 5
         echo "
 <p>";
-        // line 8
+        // line 6
         echo $context["forms"]->getinput("username", "ss", "button");
         echo "</p>
 
@@ -59,7 +59,7 @@ class __TwigTemplate_5b0ffa9ef4d30a52baefe506ec4cb374a516652c2533c3aea029e5c1dff
 
     public function getDebugInfo()
     {
-        return array (  37 => 8,  34 => 7,  31 => 6,  27 => 1,  25 => 2,  11 => 1,);
+        return array (  37 => 6,  34 => 5,  31 => 4,  27 => 1,  25 => 2,  11 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -74,8 +74,6 @@ class __TwigTemplate_5b0ffa9ef4d30a52baefe506ec4cb374a516652c2533c3aea029e5c1dff
     {
         return new Twig_Source("{% extends \"layout.html\" %}
 {% import \"forms.html\" as forms %}
-
-
 
 {% block head%}
 

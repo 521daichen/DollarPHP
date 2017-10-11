@@ -36,10 +36,10 @@ class  Router{
     public function run(){
 
         //如果模块目录下有router.php的配置项则优先模块里的配置
-        $routerFile = MODULE_CONFIG.'\\'.'router.php';
+        $routerFile = MODULE_CONFIG.'router.php';
+
         if(is_file($routerFile)){
             $dispatcher = \dollarphp\helper\Config::all('router',MODULE_CONFIG);
-
         }else{
             $dispatcher = \dollarphp\lib\conf::all('router');
         }
@@ -52,8 +52,10 @@ class  Router{
         }
         $uri = rawurldecode($uri);
         $routeInfo = $dispatcher->dispatch($httpMethod, $uri);
+
         switch ($routeInfo[0]) {
             case \FastRoute\Dispatcher::NOT_FOUND:
+                echo "not fond";
                 // ... 404 Not Found
                 break;
             case \FastRoute\Dispatcher::METHOD_NOT_ALLOWED:
