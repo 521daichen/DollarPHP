@@ -12,9 +12,9 @@ use dollarphp\dollar;
 use dollarphp\lib\Controller;
 use dollarphp\lib\Log\file;
 use dollarphp\lib\model;
-use helper\Config;
-use helper\Log;
-use helper\MarkDown;
+use \dollarphp\helper\Config;
+use \dollarphp\helper\Log;
+use \dollarphp\helper\MarkDown;
 use Symfony\Component\HttpFoundation\Request;
 
 class index extends Controller {
@@ -22,10 +22,15 @@ class index extends Controller {
     public function index($id)
     {
 
+        $this->assign('daichen','sss');
+        $this->display('test/index');
+        exit();
+
         global $dollarApp;
 //      $orm = new \dollarphp\lib\Orm();
         $orm = $dollarApp->get('orm');
         $log = $dollarApp->get('log');
+
 
         echo MarkDown::text("    copy;"); # prints: <p>Hello <em>Parsedown</em>!</p>
 

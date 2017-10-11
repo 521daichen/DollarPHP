@@ -14,8 +14,6 @@ class Di implements \ArrayAccess{
     //获取服务
     public function get($name,$params=array()){
         //先从已经实例化的列表中查找
-
-
         if(isset($this->_instances[$name])){
 
             return $this->_instances[$name];
