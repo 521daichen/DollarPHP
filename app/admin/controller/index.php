@@ -7,6 +7,7 @@ class Index extends Controller {
 
     public function index()
     {
+//var_export($this->requestquery->get('sss'));
         $this->display('index/index');
     }
 

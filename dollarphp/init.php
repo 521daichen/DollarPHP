@@ -11,16 +11,16 @@ header('Content-type:text/html;charset=utf8');
 
 
 include "vendor/autoload.php";
+
 /**
  * 为了分模块管理
  */
+//
 $request_url = explode('/',substr($_SERVER['REQUEST_URI'],1));
 if(empty($request_url[0])){
-   echo "<img style='width: 200px' src='/cat.jpg'></img><div style='color: red'>模块都没有,要玩鸡毛</div>";
+    echo "<img style='width: 200px' src='/cat.jpg'></img><div style='color: red'>模块都没有,要玩鸡毛</div>";
     exit();
 }
-
-
 
 //定义当前框架所在的目录
 define('DOLLAR',realpath('./'));
@@ -36,6 +36,7 @@ define('DOLLARPHP',DOLLAR.'/dollarphp/');
 define('MODULE_CONFIG',MODULE.'/config/');
 //配置路由
 define('ROUTE_CONFIG',false);
+define('ROUTE_SIMPLE',false);
 //调试模式
 define('DEBUG',true);
 //插件模式

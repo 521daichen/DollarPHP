@@ -25,6 +25,13 @@ class dollar{
 //        \dollarphp\lib\log::init();
 //        \dollarphp\lib\log::log('test');
         $router = new \dollarphp\lib\Router();
+
+        if(ROUTE_SIMPLE){
+            // m=xx&c=xx&a=xx
+            $router->simpleMatch();
+        }
+
+
         if(ROUTE_CONFIG){
             //如果开启路由配置模式 使用fast_router
             $router->run();

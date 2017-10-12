@@ -5,12 +5,12 @@
  * Date: 2017/10/4
  * Time: 22:50
  */
-namespace app\home\model;
+namespace app\admin\model;
 
 use dollarphp\lib\model;
 
-class dollarModel extends model{
-    public $table = "dollar";
+class roleModel extends model{
+    public $table = "role";
     public function lists()
     {
         $res = $this->select($this->table,'*');

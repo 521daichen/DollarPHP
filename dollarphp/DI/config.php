@@ -4,7 +4,7 @@
  */
 return array(
     'router'=>'\dollarphp\lib\Router',
-    'request'=>'\Symfony\Component\HttpFoundation\Request',
+    'requester'=>'\dollarphp\lib\Requester',
     'dollar'=>'\dollarphp\dollar',
     'logger'=>'\dollarphp\lib\MonoLog',
     'orm'=>'\dollarphp\lib\Orm',

@@ -37,7 +37,7 @@ class  Router{
             }
         }catch (ErrorException $e){
 
-            var_export($e);
+
         }
 
         try {
@@ -57,15 +57,56 @@ class  Router{
     }
 
     /**
+     * @throws \ErrorException
+     * 喜欢的模式
+     */
+    public function simpleMatch(){
+
+
+        $module = isset($_GET['m'])?$_GET['m']:'index';
+        $controller = isset($_GET['c'])?$_GET['c']:'index';
+        $action = isset($_GET['a'])?$_GET['a']:'index';
+
+        if(!$module){
+            throw new \ErrorException('没有找到此模块，模块都删！要上天啊！');
+        }
+
+//        $ctrlfile = APP.'/controller/'.$controller.'.php';
+        $ctrlClass = APP.'\\'.$module.'\\controller\\'.$controller;
+        try{
+            if(!class_exists($ctrlClass)){
+                throw new \ErrorException('没有找到此控制器，请检查请求格式或检查应用目录下是否有响应程序文件');
+            }else{
+                $c = new $ctrlClass();
+            }
+        }catch (ErrorException $e){
+        }
+
+        try {
+            if(!method_exists($c,$action)){
+                throw new \ErrorException('没有找到此方法，请检查请求格式或检查应用目录下是否有响应程序文件');
+            }else{
+                $c->$action();
+            }
+        }catch (ErrorException $e){
+
+        }
+
+    }
+
+    /**
      * 配置匹配
      */
     public function run(){
 
         //如果模块目录下有router.php的配置项则优先模块里的配置
         $routerFile = MODULE_CONFIG.'router.php';
+        var_export($routerFile);
+        exit();
 
         if(is_file($routerFile)){
             $dispatcher = \dollarphp\helper\Config::all('router',MODULE_CONFIG);
+
         }else{
             $dispatcher = \dollarphp\lib\conf::all('router');
         }

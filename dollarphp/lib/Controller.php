@@ -9,10 +9,25 @@
 namespace dollarphp\lib;
 use dollarphp\lib\TwigExtends\TwigExt;
 use dollarphp\lib\TwigExtends\TwigFilterExt;
+use Symfony\Component\HttpFoundation\Request;
 
 class Controller {
 
     public $assigns=[];
+    public $request;
+
+    public function __construct()
+    {
+        $request = new Request(
+            $_GET,
+            $_POST,
+            array(),
+            $_COOKIE,
+            $_FILES,
+            $_SERVER
+        );
+        $this->request =   $request;
+    }
 
     public function assign($name,$value){
         $this->assigns[$name] = $value;
