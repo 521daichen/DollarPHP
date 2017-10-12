@@ -1,11 +1,18 @@
 <?php
 namespace app\admin\controller;
 
-class Index{
+use dollarphp\lib\Controller;
+
+class Index extends Controller {
 
     public function index()
     {
-        echo 1;
+        $this->display('index/index');
+    }
+
+    public function welcome()
+    {
+        $this->display('index/welcome');
     }
 
 }

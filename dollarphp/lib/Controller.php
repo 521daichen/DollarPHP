@@ -7,6 +7,9 @@
  */
 
 namespace dollarphp\lib;
+use dollarphp\lib\TwigExtends\TwigExt;
+use dollarphp\lib\TwigExtends\TwigFilterExt;
+
 class Controller {
 
     public $assigns=[];
@@ -21,14 +24,31 @@ class Controller {
         $point = strpos($view,'/');
         $controllerDir = substr($view,0,$point).'/';
         $methodName = substr($view,$point);
-        $loader = new \Twig_Loader_Filesystem(MODULE.'/views/'.$controllerDir);
+        $loader = new \Twig_Loader_Filesystem(MODULE.'/views/');
         $twig = new \Twig_Environment($loader, array(
             'debug'=>DEBUG,
             'cache' => DOLLAR.'/cache/twig',
             /* 'cache' => './compilation_cache', */
         ));
-        $template = $twig->load($methodName.'.html');
-        $template->display($this->assigns?$this->assigns:'');
+        $ext = DOLLARPHP.'\lib\TwigExtends';
+
+
+        //加载自定义扩展
+        $twigExter = new TwigExt();
+        //加载自定义过滤器
+        foreach ($twigExter->filterList as $name=>$value){
+            $function = new \Twig_SimpleFilter($name,$value);
+            $twig->addFilter($function);
+        }
+        //加载自定义过滤器
+        foreach ($twigExter->functionList as $name=>$value){
+            $function = new \Twig_SimpleFunction($name,$value);
+            $twig->addFunction($function);
+        }
+
+        //这里之所以这么写 是因为指定的模板目录在模板中使用 extends 或者include的时候 不能正常加载
+        $template = $twig->load('/'.$controllerDir.'/'.$methodName.'.html');
+        $template->display($this->assigns?$this->assigns:[]);
 //        echo $twig->render('index.html',$this->assigns);
     }
 }
