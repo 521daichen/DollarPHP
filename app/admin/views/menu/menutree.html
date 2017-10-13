@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+
+    <link type="text/css" rel="stylesheet" href="{{constant('__STATIC__')}}/ext5/packages/ext-theme-neptune/build/resources/ext-theme-neptune-all.css" />
+
+    <script src="{{constant('__STATIC__')}}/ext5/ext-all.js"></script>
+    <script>
+
+        var treeData = JSON.parse({{ r|json_encode }});
+
+        var store = Ext.create('Ext.data.TreeStore',{
+            root:{
+                expanded:true,
+                children:treeData
+            }
+        });
+
+        Ext.onReady(function(){
+            Ext.create('Ext.tree.Panel', {
+                title: '简单的树',
+                height:500,
+                store:store,
+                rootVisible:false,
+                renderTo:'tree'
+            });
+        });
+
+    </script>
+
+</head>
+
+
+
+<body>
+
+<div id="tree"></div>
+</body>
+
+
+</html>

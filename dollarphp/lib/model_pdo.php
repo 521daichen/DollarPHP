@@ -16,7 +16,7 @@ class  modelPdo extends \PDO{
         try{
             parent::__construct($temp['DSN'], $temp['USERNAME'], $temp['PASSWD']);
         }catch (\PDOException $e){
-           echo $e->getMessage();
+            echo $e->getMessage();
         }
     }
 

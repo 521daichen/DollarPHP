@@ -16,8 +16,6 @@ class role extends Controller {
     public function index(){
         $roleModel = new roleModel();
         $lists = $roleModel->lists();
-var_export($lists);
-
 
         $this->display('/role/index');
     }

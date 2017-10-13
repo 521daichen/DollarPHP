@@ -7,10 +7,9 @@
  */
 $url = function($module,$controller,$method)
 {
+
     return '/'.$module.'/' . $controller . '/' . $method;
 };
-
-
 
 return array(
     'url'=>$url,

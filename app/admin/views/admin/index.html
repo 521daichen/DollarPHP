@@ -54,11 +54,10 @@
         </tbody>
     </table>
 </div>
-<!--_footer 作为公共模版分离出去-->
-<script type="text/javascript" src="lib/jquery/1.9.1/jquery.min.js"></script>
-<script type="text/javascript" src="lib/layer/2.4/layer.js"></script>
-<script type="text/javascript" src="static/h-ui/js/H-ui.min.js"></script>
-<script type="text/javascript" src="static/h-ui.admin/js/H-ui.admin.js"></script> <!--/_footer 作为公共模版分离出去-->
+
+
+
+{% include '/common/foot.html' %}
 
 <!--请在下方写此页面业务相关的脚本-->
 <script type="text/javascript" src="lib/My97DatePicker/4.8/WdatePicker.js"></script>
@@ -115,8 +114,6 @@
     function admin_start(obj,id){
         layer.confirm('确认要启用吗？',function(index){
             //此处请求后台程序，下方是成功后的前台处理……
-
-
             $(obj).parents("tr").find(".td-manage").prepend('<a onClick="admin_stop(this,id)" href="javascript:;" title="停用" style="text-decoration:none"><i class="Hui-iconfont">&#xe631;</i></a>');
             $(obj).parents("tr").find(".td-status").html('<span class="label label-success radius">已启用</span>');
             $(obj).remove();
